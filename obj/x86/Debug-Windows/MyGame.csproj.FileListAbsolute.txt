@@ -1,0 +1,157 @@
+C:\Users\FU\Documents\Projects\SwinGameXamarin\bin\Debug\Resources\animations\startup.txt
+C:\Users\FU\Documents\Projects\SwinGameXamarin\bin\Debug\Resources\bundles\FileDialog.txt
+C:\Users\FU\Documents\Projects\SwinGameXamarin\bin\Debug\Resources\bundles\splash.txt
+C:\Users\FU\Documents\Projects\SwinGameXamarin\bin\Debug\Resources\fonts\arial.ttf
+C:\Users\FU\Documents\Projects\SwinGameXamarin\bin\Debug\Resources\fonts\cour.ttf
+C:\Users\FU\Documents\Projects\SwinGameXamarin\bin\Debug\Resources\fonts\maven_pro_regular.ttf
+C:\Users\FU\Documents\Projects\SwinGameXamarin\bin\Debug\Resources\images\fdFile.png
+C:\Users\FU\Documents\Projects\SwinGameXamarin\bin\Debug\Resources\images\fdFolder.png
+C:\Users\FU\Documents\Projects\SwinGameXamarin\bin\Debug\Resources\images\FileDialog_Active.png
+C:\Users\FU\Documents\Projects\SwinGameXamarin\bin\Debug\Resources\images\FileDialog_Background.png
+C:\Users\FU\Documents\Projects\SwinGameXamarin\bin\Debug\Resources\images\FileDialog_Inactive.png
+C:\Users\FU\Documents\Projects\SwinGameXamarin\bin\Debug\Resources\images\FileDialog_Scroll.png
+C:\Users\FU\Documents\Projects\SwinGameXamarin\bin\Debug\Resources\images\FileDialog_ScrollSmall.png
+C:\Users\FU\Documents\Projects\SwinGameXamarin\bin\Debug\Resources\images\Swinburne.jpg
+C:\Users\FU\Documents\Projects\SwinGameXamarin\bin\Debug\Resources\images\SwinGameAni.png
+C:\Users\FU\Documents\Projects\SwinGameXamarin\bin\Debug\Resources\panels\FileDialog.txt
+C:\Users\FU\Documents\Projects\SwinGameXamarin\bin\Debug\Resources\sounds\error.wav
+C:\Users\FU\Documents\Projects\SwinGameXamarin\bin\Debug\Resources\sounds\SwinGameStart.wav
+C:\Users\FU\Documents\Projects\SwinGameXamarin\bin\Debug\Resources\SwinGame.icns
+C:\Users\FU\Documents\Projects\SwinGameXamarin\bin\Debug\Resources\SwinGame.ico
+C:\Users\FU\Documents\Projects\SwinGameXamarin\bin\Debug\MyGame.exe
+C:\Users\FU\Documents\Projects\SwinGameXamarin\bin\Debug\SwinGame.dll
+C:\Users\FU\Documents\Projects\SwinGameXamarin\obj\x86\Debug-Windows\MyGame.exe
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\Resources\animations\startup.txt
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\Resources\bundles\FileDialog.txt
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\Resources\bundles\splash.txt
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\Resources\fonts\arial.ttf
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\Resources\fonts\cour.ttf
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\Resources\fonts\maven_pro_regular.ttf
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\Resources\images\fdFile.png
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\Resources\images\fdFolder.png
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\Resources\images\FileDialog_Active.png
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\Resources\images\FileDialog_Background.png
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\Resources\images\FileDialog_Inactive.png
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\Resources\images\FileDialog_Scroll.png
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\Resources\images\FileDialog_ScrollSmall.png
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\Resources\images\Swinburne.jpg
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\Resources\images\SwinGameAni.png
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\Resources\panels\FileDialog.txt
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\Resources\sounds\error.wav
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\Resources\sounds\SwinGameStart.wav
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\Resources\SwinGame.icns
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\Resources\SwinGame.ico
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\MyGame.exe
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\mscorlib.dll
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\SwinGame.dll
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\normidna.nlp
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\normnfc.nlp
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\normnfd.nlp
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\normnfkc.nlp
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\normnfkd.nlp
+C:\Users\xaca888\Documents\SwinGameXamarin\obj\x86\Debug-Windows\MyGame.csprojResolveAssemblyReference.cache
+C:\Users\xaca888\Documents\SwinGameXamarin\obj\x86\Debug-Windows\MyGame.exe
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\instruction.png
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\BACK.png
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\coin1.png
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\bomb.png
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\ship.png
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\tools.png
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\batu.png
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\nunit.framework.dll
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\nunit.framework.xml
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\End.png
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\coin.wav
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\explode.wav
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\recover.wav
+C:\Users\xaca888\Documents\SwinGameXamarin\bin\Debug\gameover.wav
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\Resources\animations\startup.txt
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\Resources\bundles\FileDialog.txt
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\Resources\bundles\splash.txt
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\Resources\fonts\arial.ttf
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\Resources\fonts\cour.ttf
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\Resources\fonts\maven_pro_regular.ttf
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\Resources\images\fdFile.png
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\Resources\images\fdFolder.png
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\Resources\images\FileDialog_Active.png
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\Resources\images\FileDialog_Background.png
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\Resources\images\FileDialog_Inactive.png
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\Resources\images\FileDialog_Scroll.png
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\Resources\images\FileDialog_ScrollSmall.png
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\Resources\images\Swinburne.jpg
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\Resources\images\SwinGameAni.png
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\Resources\panels\FileDialog.txt
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\Resources\sounds\error.wav
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\Resources\sounds\SwinGameStart.wav
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\Resources\SwinGame.icns
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\Resources\SwinGame.ico
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\BACK.png
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\coin1.png
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\bomb.png
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\ship.png
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\tools.png
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\batu.png
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\End.png
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\coin.wav
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\explode.wav
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\recover.wav
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\gameover.wav
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\MyGame.exe
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\mscorlib.dll
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\nunit.framework.dll
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\SwinGame.dll
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\nunit.framework.xml
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\normidna.nlp
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\normnfc.nlp
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\normnfd.nlp
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\normnfkc.nlp
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\normnfkd.nlp
+D:\OOP\D Task\SwinGameXamarin\obj\x86\Debug-Windows\MyGame.csprojResolveAssemblyReference.cache
+D:\OOP\D Task\SwinGameXamarin\obj\x86\Debug-Windows\MyGame.exe
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\src\instruction.jpg
+D:\OOP\D Task\SwinGameXamarin\bin\Debug\instruction.png
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\Resources\animations\startup.txt
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\Resources\bundles\FileDialog.txt
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\Resources\bundles\splash.txt
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\Resources\fonts\arial.ttf
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\Resources\fonts\cour.ttf
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\Resources\fonts\maven_pro_regular.ttf
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\Resources\images\fdFile.png
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\Resources\images\fdFolder.png
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\Resources\images\FileDialog_Active.png
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\Resources\images\FileDialog_Background.png
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\Resources\images\FileDialog_Inactive.png
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\Resources\images\FileDialog_Scroll.png
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\Resources\images\FileDialog_ScrollSmall.png
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\Resources\images\Swinburne.jpg
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\Resources\images\SwinGameAni.png
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\Resources\panels\FileDialog.txt
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\Resources\sounds\error.wav
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\Resources\sounds\SwinGameStart.wav
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\Resources\SwinGame.icns
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\Resources\SwinGame.ico
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\BACK.png
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\coin1.png
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\bomb.png
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\ship.png
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\tools.png
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\batu.png
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\End.png
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\coin.wav
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\explode.wav
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\recover.wav
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\gameover.wav
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\src\instruction.jpg
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\instruction.png
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\MyGame.exe
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\mscorlib.dll
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\nunit.framework.dll
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\SwinGame.dll
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\nunit.framework.xml
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\normidna.nlp
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\normnfc.nlp
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\normnfd.nlp
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\normnfkc.nlp
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\bin\Debug\normnfkd.nlp
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\obj\x86\Debug-Windows\MyGame.csprojResolveAssemblyReference.cache
+D:\4330153_Final_Submission\D Task\SwinGameXamarin\obj\x86\Debug-Windows\MyGame.exe

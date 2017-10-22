@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{871B5A90-103A-46A5-BBB9-07C02B9851D1}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug-Windows|x86" />
+  <MonoDevelop.Ide.ItemProperties.MyGame PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="src\GameMain.cs">
+    <Files>
+      <File FileName="src\GameMain.cs" Line="75" Column="17" />
+      <File FileName="Class\Collision.cs" Line="19" Column="17" />
+      <File FileName="Class\MapClass.cs" Line="58" Column="14" />
+      <File FileName="Class\TrapMovement.cs" Line="8" Column="25" />
+      <File FileName="Class\UnitTest.cs" Line="15" Column="13" />
+      <File FileName="Class\ItemType.cs" Line="9" Column="3" />
+      <File FileName="Class\Item.cs" Line="56" Column="22" />
+      <File FileName="Class\Trap.cs" Line="18" Column="26" />
+      <File FileName="Class\Move.cs" Line="13" Column="20" />
+      <File FileName="Class\Movement.cs" Line="1" Column="1" />
+      <File FileName="Class\PlayerMovement.cs" Line="28" Column="22" />
+      <File FileName="Class\Player.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+</Properties>
