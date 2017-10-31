@@ -1,16 +1,23 @@
 ﻿using System;
+using System.Collections.Generic;
 using SwinGameSDK;
 namespace MyGame
 {
 	public class Trap
 	{
-		private Movement _move,_move2;
-		private TrapMovement _trapmove,_trapmove2;
+
+		private TrapMovement _trapmove, _trapmove2;
+		Random random_generator = new Random ();
+		//Random r3;
+		List<int> Postition = new List<int> { 225, 325, 425 };
+
+		List<Movement> testmove = new List<Movement> { Movement.Top, Movement.Bottom, Movement.Left, Movement.Right };
+		private Movement _getmove;
+		private Movement _getmove2;
 
 		public Trap ()
 		{
-			_move = new Movement ();
-			_move2 = new Movement ();
+
 			_trapmove = new TrapMovement ();
 			_trapmove2 = new TrapMovement ();
 		}
@@ -40,114 +47,97 @@ namespace MyGame
 
 		public void randomposition ()
 		{
-			Random r = new Random ();
-			int random = r.Next (0, 12);
+			if (random_generator.Next (0, 2) == 0) { // let 0 = x axis
+				if (random_generator.Next (0, 2) == 0) { //let 0 be y = -10
+					getTrap.GetY = -100;
+				} else { //let 1 be y = 700
+					getTrap.GetY = 800;
+				}
+				getTrap.GetX = Postition [random_generator.Next (0, 3)];
 
-			if (random == 0) {
-				getTrap.GetX = 225;
-				getTrap.GetY = -10;
-				_move = Movement.Bottom;
-			} else if (random == 1) {
-				getTrap.GetX = 325;
-				getTrap.GetY = -10;
-				_move = Movement.Bottom;
-			} else if (random == 2) {
-				getTrap.GetX = 425;
-				getTrap.GetY = -10;
-				_move = Movement.Bottom;
-			} else if (random == 3) {
-				getTrap.GetX = -10;
-				getTrap.GetY = 225;
-				_move = Movement.Right;
-			} else if (random == 4) {
-				getTrap.GetX = -10;
-				getTrap.GetY = 325;
-				_move = Movement.Right;
-			} else if (random == 5) {
-				getTrap.GetX = -10;
-				getTrap.GetY = 425;
-				_move = Movement.Right;
-			} else if (random == 6) {
-				getTrap.GetX = 225;
-				getTrap.GetY = 700;
-				_move = Movement.Top;
-			} else if (random == 7) {
-				getTrap.GetX = 325;
-				getTrap.GetY = 700;
-				_move = Movement.Top;
-			} else if (random == 8) {
-				getTrap.GetX = 425;
-				getTrap.GetY = 700;
-				_move = Movement.Top;
-			} else if (random == 9) {
-				getTrap.GetX = 700;
-				getTrap.GetY = 225;
-				_move = Movement.Left;
-			} else if (random == 10) {
-				getTrap.GetX = 700;
-				getTrap.GetY = 325;
-				_move = Movement.Left;
-			} else if (random == 11) {
-				getTrap.GetX = 700;
-				getTrap.GetY = 425;
-				_move = Movement.Left;
+				_getmove = testmove [random_generator.Next (0, 2)]; // let 0 = top, 1 = bottom
+
+			} else { // let 1 = y axis
+				if (random_generator.Next (0, 2) == 0) { //let 0 be x = -10
+					getTrap.GetX = -100;
+				} else { //let 1 be x = 700
+					getTrap.GetX = 800;
+				}
+				getTrap.GetY = Postition [random_generator.Next (0, 3)];
+
+				_getmove = testmove [random_generator.Next (2, 4)]; // let 2 = left, 3 = right
 			}
+
+			//r3 = new Random ();
+			//int random = r1.Next (0, 2);
+			//int randomDirection = r3.Next (0, 4);
+
+			//_getmove = testmove [randomDirection];
+
+			//if (_getmove == Movement.Left) {
+			//	getTrap.GetX = 700;
+			//	getTrap.GetY = Postition1 [random];
+			//	Console.WriteLine ("Direction = " + _getmove + ", y = " + Postition1[random]);
+			//} else if (_getmove == Movement.Right) {
+			//	getTrap.GetX = -10;
+			//	getTrap.GetY = Postition1 [random];
+			//	Console.WriteLine ("Direction = " + _getmove + ", y = " + Postition1[random]);
+			//} else if (_getmove == Movement.Top) {
+			//	getTrap.GetX = Postition1 [random];
+			//	getTrap.GetY = 700;
+			//	Console.WriteLine ("Direction = " + _getmove + ", x = " + Postition1[random]);
+			//} else if (_getmove == Movement.Bottom) {
+			//	getTrap.GetX = Postition1 [random];
+			//	getTrap.GetY = -10;
+			//	Console.WriteLine ("Direction = " + _getmove + ", x = " + Postition1[random]);
+			//}
 		}
 
 		public void randomposition2 ()
 		{
-			Random r = new Random ();
-			int random = r.Next (0, 12);
+			if (random_generator.Next (0, 2) == 0) { // let 0 = x axis
 
-			if (random == 1) {
-				getTrap2.GetX = 225;
-				getTrap2.GetY = -10;
-				_move2 = Movement.Bottom;
-			} else if (random == 0) {
-				getTrap2.GetX = 325;
-				getTrap2.GetY = -10;
-				_move2 = Movement.Bottom;
-			} else if (random == 3) {
-				getTrap2.GetX = 425;
-				getTrap2.GetY = -10;
-				_move2 = Movement.Bottom;
-			} else if (random == 5) {
-				getTrap2.GetX = -10;
-				getTrap2.GetY = 225;
-				_move2 = Movement.Right;
-			} else if (random == 7) {
-				getTrap2.GetX = -10;
-				getTrap2.GetY = 325;
-				_move2 = Movement.Right;
-			} else if (random == 6) {
-				getTrap2.GetX = -10;
-				getTrap2.GetY = 425;
-				_move2 = Movement.Right;
-			} else if (random == 4) {
-				getTrap2.GetX = 225;
-				getTrap2.GetY = 700;
-				_move2 = Movement.Top;
-			} else if (random == 7) {
-				getTrap2.GetX = 325;
-				getTrap2.GetY = 700;
-				_move2 = Movement.Top;
-			} else if (random == 11) {
-				getTrap2.GetX = 425;
-				getTrap2.GetY = 700;
-				_move2 = Movement.Top;
-			} else if (random == 10) {
-				getTrap2.GetX = 700;
-				getTrap2.GetY = 225;
-				_move2 = Movement.Left;
-			} else if (random == 9) {
-				getTrap2.GetX = 700;
-				getTrap2.GetY = 325;
-				_move2 = Movement.Left;
-			} else if (random == 8) {
-				getTrap2.GetX = 700;
-				getTrap2.GetY = 425;
-				_move2 = Movement.Left;
+				if (random_generator.Next (0, 2) == 0) { //let 0 be y = -10
+					getTrap2.GetY = -100;
+				} else { //let 1 be y = 700
+					getTrap2.GetY = 800;
+				}
+				getTrap2.GetX = Postition [random_generator.Next (0, 3)];
+
+				_getmove2 = testmove [random_generator.Next (0, 2)]; // let 0 = top, 1 = bottom
+
+			} else { // let 1 = y axis
+				if (random_generator.Next (0, 2) == 0) { //let 0 be x = -10
+					getTrap2.GetX = -100;
+				} else { //let 1 be x = 700
+					getTrap2.GetX = 800;
+				}
+				getTrap2.GetY = Postition [random_generator.Next (0, 3)];
+
+				_getmove2 = testmove [random_generator.Next (2, 4)]; // let 2 = left, 3 = right
 			}
+
+			//r1 = new Random ();
+			//r2 = new Random ();
+			//int random = r1.Next (0, 3);
+
+			//int randomDirection = r2.Next (0, 4);
+
+			//_getmove = testmove [randomDirection];
+
+			//if (_getmove == Movement.Left) {
+			//	getTrap.GetX = 700;
+			//	getTrap.GetY = Postition [random];
+			//} else if (_getmove == Movement.Right) {
+			//	getTrap.GetX = -10;
+			//	getTrap.GetY = Postition [random];
+			//} else if (_getmove == Movement.Top) {
+			//	getTrap.GetX = Postition [random];
+			//	getTrap.GetY = 700;
+			//} else if (_getmove == Movement.Bottom) {
+			//	getTrap.GetX = Postition [random];
+			//	getTrap.GetY = -10;
+			//}
 		}
 
 
@@ -159,29 +149,40 @@ namespace MyGame
 
 		public void drop ()
 		{
-			getTrap.Moving (_move);
-			getTrap2.Moving (_move2);
+			getTrap.Moving (_getmove);
+			getTrap2.Moving (_getmove2);
 
-			if (getTrap.GetY > 700) {
+			if (_getmove == Movement.Left && getTrap.GetX < -10) {
 				randomposition ();
-			} else if (getTrap.GetX > 700) {
+			} else if (_getmove == Movement.Right && getTrap.GetX > 700) {
 				randomposition ();
-			} else if (getTrap.GetY < -10) {
+			} else if (_getmove == Movement.Top && getTrap.GetY < -10) {
 				randomposition ();
-			} else if (getTrap.GetX < -10) {
+			} else if (_getmove == Movement.Bottom && getTrap.GetY > 700) {
 				randomposition ();
 			}
 
 
-			if (getTrap2.GetY > 700) {
+			if (_getmove2 == Movement.Left && getTrap2.GetX < -10) {
 				randomposition2 ();
-			} else if (getTrap2.GetX > 700) {
+			} else if (_getmove2 == Movement.Right && getTrap2.GetX > 700) {
 				randomposition2 ();
-			} else if (getTrap2.GetY < -10) {
+			} else if (_getmove2 == Movement.Top && getTrap2.GetY < -10) {
 				randomposition2 ();
-			} else if (getTrap2.GetX < -10) {
+			} else if (_getmove2 == Movement.Bottom && getTrap2.GetY > 700) {
 				randomposition2 ();
 			}
+
+			//if (getTrap2.GetY > 700) {
+			//	randomposition2 ();
+			//} else if (getTrap2.GetX > 700) {
+			//	randomposition2 ();
+			//} else if (getTrap2.GetY < -10) {
+			//	randomposition2 ();
+			//} else if (getTrap2.GetX < -10) {
+			//	randomposition2 ();
+			//}
 		}
+
 	}
 }
