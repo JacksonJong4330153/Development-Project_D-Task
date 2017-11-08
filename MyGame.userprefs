@@ -1,24 +1,16 @@
-<Properties StartupConfiguration="{871B5A90-103A-46A5-BBB9-07C02B9851D1}|Default">
+﻿<Properties StartupConfiguration="{871B5A90-103A-46A5-BBB9-07C02B9851D1}|Default">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug-Windows|x86" />
   <MonoDevelop.Ide.ItemProperties.MyGame PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-<<<<<<< Updated upstream
   <MonoDevelop.Ide.Workbench ActiveDocument="src\GameMain.cs">
-=======
-  <MonoDevelop.Ide.Workbench ActiveDocument="Class\Trap.cs">
->>>>>>> Stashed changes
     <Files>
-      <File FileName="Class\Trap.cs" Line="46" Column="42" />
-      <File FileName="Class\Move.cs" Line="1" Column="1" />
-      <File FileName="Class\Movement.cs" Line="1" Column="1" />
-<<<<<<< Updated upstream
-      <File FileName="Class\PlayerMovement.cs" Line="1" Column="1" />
-      <File FileName="Class\Player.cs" Line="1" Column="1" />
-=======
->>>>>>> Stashed changes
+      <File FileName="Class\Collision.cs" Line="69" Column="18" />
+      <File FileName="Class\Boss.cs" Line="12" Column="17" />
+      <File FileName="src\GameMain.cs" Line="125" Column="6" />
+      <File FileName="Class\Trap.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />

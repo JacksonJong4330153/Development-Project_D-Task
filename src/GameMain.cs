@@ -19,6 +19,8 @@ namespace MyGame
 			Player p = new Player ();
 			Item i = new Item ();
 			Trap t = new Trap ();
+			Boss b = new Boss ();
+			int bosstimer = 2000;
 			Collision c = new Collision ();
 
 			bool co, co2,co3;
@@ -27,6 +29,7 @@ namespace MyGame
 
 			position = SwinGame.PointAt (895, 110);
 			position2 = SwinGame.PointAt (895, 275);
+			Point2D bosstextposition = SwinGame.PointAt (325, 325);
 
 			MapClass m = new MapClass ();
 
@@ -118,7 +121,17 @@ namespace MyGame
 					 
 				}
 
-
+				if (p.getScore >= 300) {
+					
+					if (bosstimer != 0) {
+						bosstimer = bosstimer - 10;
+						SwinGame.DrawText ("Enemy appear!!!!", Color.Red, f, bosstextposition);
+					} else if (bosstimer == 0) {
+						b.getBoss.GetY = 0;
+						b.draw ();
+						b.checkTime ();
+					}
+				}
 				//t.checkscore (p.getScore);
 
 				if (p.getHealth == 0) {

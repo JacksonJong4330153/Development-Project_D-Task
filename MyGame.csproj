@@ -86,6 +86,7 @@
     <Compile Include="Class\MapClass.cs" />
     <Compile Include="Class\p.cs" />
     <Compile Include="Class\UnitTest.cs" />
+    <Compile Include="Class\Boss.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SwinGame">
@@ -226,6 +227,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="meteorSmall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="boss.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
