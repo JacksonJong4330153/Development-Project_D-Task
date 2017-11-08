@@ -119,7 +119,7 @@ namespace MyGame
 				}
 
 
-				t.checkscore (p.getScore);
+				//t.checkscore (p.getScore);
 
 				if (p.getHealth == 0) {
 					

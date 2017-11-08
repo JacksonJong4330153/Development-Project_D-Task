@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using SwinGameSDK;
+
 namespace MyGame
 {
 	public class Trap
@@ -10,6 +11,9 @@ namespace MyGame
 		Random random_generator = new Random ();
 		//Random r3;
 		List<int> Postition = new List<int> { 225, 325, 425 };
+		List<String> MeteorType = new List<string> { "meteorSmall.png", "meteorMedium.png", "meteorBig.png" };
+		String meteor1;
+		String meteor2;
 
 		List<Movement> testmove = new List<Movement> { Movement.Top, Movement.Bottom, Movement.Left, Movement.Right };
 		private Movement _getmove;
@@ -32,7 +36,21 @@ namespace MyGame
 			set { _trapmove2 = value; }
 		}
 
-		public void checkscore (int score)
+		public void checkMeteorType ()
+		{
+			if (meteor1 == "meteorSmall.png" || meteor2 == "meteorSmall.png") {
+				getTrap.getSpeed = getTrap.getSpeed + 12;
+				getTrap2.getSpeed = getTrap2.getSpeed + 12;
+			} else if (meteor1 == "meteorMedium.png" || meteor2 == "meteorMedium.png") {
+				getTrap.getSpeed = getTrap.getSpeed + 9;
+				getTrap2.getSpeed = getTrap2.getSpeed + 9;
+			} else {
+				getTrap.getSpeed = getTrap.getSpeed - 5;
+				getTrap2.getSpeed = getTrap2.getSpeed - 5;
+			}
+		}
+
+		/*public void checkscore (int score)
 		{
 			if (score == 100 && getTrap.getSpeed == 5) {
 				getTrap.getSpeed = getTrap.getSpeed + 2;
@@ -43,7 +61,7 @@ namespace MyGame
 				getTrap2.getSpeed = 9;
 
 			}
-		}
+		}*/
 
 		public void randomposition ()
 		{
@@ -66,6 +84,9 @@ namespace MyGame
 				getTrap.GetY = Postition [random_generator.Next (0, 3)];
 
 				_getmove = testmove [random_generator.Next (2, 4)]; // let 2 = left, 3 = right
+
+				meteor1 = MeteorType [random_generator.Next (0, 3)]; // generate random meteor type
+				//Console.WriteLine ("meteor1 = " + meteor1);
 			}
 
 			//r3 = new Random ();
@@ -115,6 +136,9 @@ namespace MyGame
 				getTrap2.GetY = Postition [random_generator.Next (0, 3)];
 
 				_getmove2 = testmove [random_generator.Next (2, 4)]; // let 2 = left, 3 = right
+
+				meteor2 = MeteorType [random_generator.Next (0, 3)]; // generate random meteor type
+				//Console.WriteLine ("meteor2 = " + meteor2);
 			}
 
 			//r1 = new Random ();
@@ -143,8 +167,8 @@ namespace MyGame
 
 		public void draw ()
 		{
-			SwinGame.DrawBitmap ("batu.png", getTrap.GetX, getTrap.GetY);
-			SwinGame.DrawBitmap ("batu.png", getTrap2.GetX, getTrap2.GetY);
+			SwinGame.DrawBitmap (meteor1, getTrap.GetX, getTrap.GetY);
+			SwinGame.DrawBitmap (meteor2, getTrap2.GetX, getTrap2.GetY);
 		}
 
 		public void drop ()
