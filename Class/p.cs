@@ -1,6 +1,0 @@
-﻿namespace MyGame
-{
-	class p
-	{
-	}
-}
