@@ -9,6 +9,8 @@ namespace MyGame
 		private int _time;
 		private int _bosshp;
 		private int _firetime;
+		private int _currentPosition;
+		private int _spawnPosition;
 
 		Random random_generator = new Random ();
 		List<int> Position = new List<int> { 225, 325, 425 };
@@ -44,7 +46,17 @@ namespace MyGame
 			}
 			if (_time <= 0) {
 				_boss.GetX = Position [random_generator.Next (0, 3)];
+				_currentPosition = _boss.GetX;
 				_time = 4000;
+			}
+		}
+
+		public void spawnBoss ()
+		{
+			_spawnPosition = Position [random_generator.Next (0, 3)];
+			while (_spawnPosition == _currentPosition){
+				_spawnPosition = Position [random_generator.Next (0, 3)];
+				_boss.GetX = _spawnPosition;
 			}
 		}
 

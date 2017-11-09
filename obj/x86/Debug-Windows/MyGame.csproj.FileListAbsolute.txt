@@ -307,3 +307,8 @@ C:\Users\Jackson\Development-Project_D-Task\bin\Debug\ship.left.png
 C:\Users\Jackson\Development-Project_D-Task\bin\Debug\ship.right.png
 C:\Users\Jackson\Development-Project_D-Task\bin\Debug\ship.top.png
 C:\Users\Jackson\Development-Project_D-Task\bin\Debug\bullet.png
+C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\ship.bottom.png
+C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\ship.left.png
+C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\ship.right.png
+C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\ship.top.png
+C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\bullet.png

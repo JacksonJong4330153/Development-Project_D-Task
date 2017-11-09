@@ -152,14 +152,23 @@ namespace MyGame
 						boss.checkTime ();
 						boss.bossfire ();
 					}
+				} else {
+					if (bosstimer == 0) {
+						boss.getBoss.GetY = 0;
+						boss.draw ();
+						boss.checkTime ();
+						boss.bossfire ();
+					}
 				}
 
 				co2 = c.BulletAndBoss (boss, b);
 				if (co2 == true) {
 					boss.getBossLife = boss.getBossLife - 1;
-					co2 = false;
 					p.getScore = p.getScore + 10;
+					boss.spawnBoss ();
+					boss.checkTime ();
 					SwinGame.PlaySoundEffect ("explode.wav");
+					co2 = false;
 				}
 				//t.checkscore (p.getScore);
 
