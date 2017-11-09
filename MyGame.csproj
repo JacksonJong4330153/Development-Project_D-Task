@@ -84,7 +84,6 @@
     <Compile Include="Class\ItemType.cs" />
     <Compile Include="Class\Collision.cs" />
     <Compile Include="Class\MapClass.cs" />
-    <Compile Include="Class\p.cs" />
     <Compile Include="Class\UnitTest.cs" />
     <Compile Include="Class\Boss.cs" />
   </ItemGroup>

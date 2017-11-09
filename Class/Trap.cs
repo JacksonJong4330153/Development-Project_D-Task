@@ -9,7 +9,6 @@ namespace MyGame
 
 		private TrapMovement _trapmove, _trapmove2;
 		Random random_generator = new Random ();
-		//Random r3;
 		List<int> Postition = new List<int> { 225, 325, 425 };
 		List<String> MeteorType = new List<string> { "meteorSmall.png", "meteorMedium.png", "meteorBig.png" };
 		String meteor1;
