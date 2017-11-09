@@ -1,10 +1,6 @@
 language: csharp
 solution: MyGame.sln
 script:
-  - xbuild /p:Configuration=Release MyGame.sln
+  - msbuild /p:Configuration=Debug MyGame.sln
 before_install:
   - sudo apt-get install nunit-console
-before_script:
-  - nuget restore MyGame.sln
-after_script:
-  - nunit-console Tests/bin/Release/Tests.dll
