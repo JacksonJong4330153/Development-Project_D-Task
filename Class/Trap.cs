@@ -38,15 +38,20 @@ namespace MyGame
 
 		public void checkMeteorType ()
 		{
-			if (meteor1 == "meteorSmall.png" || meteor2 == "meteorSmall.png") {
-				getTrap.getSpeed = getTrap.getSpeed + 12;
-				getTrap2.getSpeed = getTrap2.getSpeed + 12;
-			} else if (meteor1 == "meteorMedium.png" || meteor2 == "meteorMedium.png") {
-				getTrap.getSpeed = getTrap.getSpeed + 9;
-				getTrap2.getSpeed = getTrap2.getSpeed + 9;
-			} else {
-				getTrap.getSpeed = getTrap.getSpeed - 5;
-				getTrap2.getSpeed = getTrap2.getSpeed - 5;
+			if (meteor1 == "meteorSmall.png") {
+				getTrap.getSpeed = 150;
+			} else if (meteor1 == "meteorMedium.png") {
+				getTrap.getSpeed = 50;
+			} else if (meteor1 == "meteorBig.png"){
+				getTrap.getSpeed = 10;
+			}
+
+			if (meteor2 == "meteorSmall.png") {
+				getTrap2.getSpeed = 150;
+			} else if (meteor2 == "meteorMedium.png") {
+				getTrap2.getSpeed = 50;
+			} else if (meteor2 == "meteorBig.png"){
+				getTrap2.getSpeed = 10;
 			}
 		}
 
@@ -185,7 +190,6 @@ namespace MyGame
 			} else if (_getmove == Movement.Bottom && getTrap.GetY > 700) {
 				randomposition ();
 			}
-
 
 			if (_getmove2 == Movement.Left && getTrap2.GetX < -10) {
 				randomposition2 ();

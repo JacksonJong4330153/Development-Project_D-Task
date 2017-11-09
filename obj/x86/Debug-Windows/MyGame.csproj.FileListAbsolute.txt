@@ -252,3 +252,4 @@ C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bi
 C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\obj\x86\Debug-Windows\MyGame.csprojResolveAssemblyReference.cache
 C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\obj\x86\Debug-Windows\MyGame.exe
 C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bin\Debug\boss.png
+C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\boss.png
