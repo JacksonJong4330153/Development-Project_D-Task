@@ -21,7 +21,7 @@
       <CustomCommands>
         <Command>
           <type>AfterBuild</type>
-          <command>%SystemRoot%\Microsoft.NET\Framework\v4.0.30319\MsBuild.exe "${ProjectDir}/${ProjectName}.csproj" /target:CopyFiles /p:Configuration=Debug-Windows;Platform=x86;OutDir="${TargetDir}"</command>
+          <command>%SystemRoot%\Microsoft.NET\Framework\v4.0.30319\MsBuild.exe "${ProjectDir}/${ProjectName}.metaproj" /target:CopyFiles /p:Configuration=Debug-Windows;Platform=x86;OutDir="${TargetDir}"</command>
           <workingdir>${ProjectDir}</workingdir>
           <externalConsole>True</externalConsole>
         </Command>
