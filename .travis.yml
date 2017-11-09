@@ -1,5 +1,9 @@
 language: csharp
 solution: MyGame.sln
+script:
+  - ./build.sh
+  - ./test.sh
+  - grep "Test Results" build.log
 before_install:
   - sudo apt-get install nunit-console
 before_script:
