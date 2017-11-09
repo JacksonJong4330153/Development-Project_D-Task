@@ -1,5 +1,9 @@
 language: csharp
-mono:
-	- latest
-	- 3.12.0
-	- 3.10.0
+script:
+  - xbuild /p:Configuration=Debug MyGame.sln
+before_install:
+  - sudo apt-get install nunit-console
+before_script:
+  - nuget restore MyGame.sln
+after_script:
+  - nunit-console Tests/bin/Debug/Tests.dll
