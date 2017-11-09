@@ -14,6 +14,9 @@ namespace MyGame
 		String meteor1;
 		String meteor2;
 
+		private int _meteorhp;
+		private int _meteorhp2;
+
 		List<Movement> testmove = new List<Movement> { Movement.Top, Movement.Bottom, Movement.Left, Movement.Right };
 		private Movement _getmove;
 		private Movement _getmove2;
@@ -23,6 +26,16 @@ namespace MyGame
 
 			_trapmove = new TrapMovement ();
 			_trapmove2 = new TrapMovement ();
+		}
+
+		public int gethp1 {
+			get { return _meteorhp; }
+			set { _meteorhp = value; }
+		}
+
+		public int gethp2 {
+			get { return _meteorhp2; }
+			set { _meteorhp2 = value; }
 		}
 
 		public TrapMovement getTrap {
@@ -39,18 +52,24 @@ namespace MyGame
 		{
 			if (meteor1 == "meteorSmall.png") {
 				getTrap.getSpeed = 150;
+				gethp1 = 1;
 			} else if (meteor1 == "meteorMedium.png") {
 				getTrap.getSpeed = 50;
+				gethp1 = 2;
 			} else if (meteor1 == "meteorBig.png"){
 				getTrap.getSpeed = 10;
+				gethp1 = 3;
 			}
 
 			if (meteor2 == "meteorSmall.png") {
 				getTrap2.getSpeed = 150;
+				gethp2 = 1;
 			} else if (meteor2 == "meteorMedium.png") {
 				getTrap2.getSpeed = 50;
+				gethp2 = 2;
 			} else if (meteor2 == "meteorBig.png"){
 				getTrap2.getSpeed = 10;
+				gethp2 = 3;
 			}
 		}
 
