@@ -5,12 +5,12 @@ namespace MyGame
 	{
 		public bool co, co2;
 
-	
+
 
 
 		public Collision ()
 		{
-			
+
 		}
 
 		public Boolean CheckCollideTrap1 (Player p, Trap t)
@@ -48,31 +48,42 @@ namespace MyGame
 			}
 		}
 
-		public int AfterCollideItemAffectHp (int hp, ItemType type)
+		public Boolean BulletAndBoss (Boss boss, Bullet b)
 		{
-			if (hp < 5 && type == ItemType.health) {
-				hp = hp + 1;
-				return hp;
-			} else if (type == ItemType.bomb) {
-				hp = hp - 1;
-				return hp;
+			if ((boss.getBoss.GetX > (b.getBullet.GetX - 10) && boss.getBoss.GetX < (b.getBullet.GetX + 10))
+				&& (boss.getBoss.GetY > (b.getBullet.GetY - 10) && boss.getBoss.GetY < (b.getBullet.GetY + 10))) {
+				return true;
 			} else {
-				return hp;
+				return false;
 			}
-
 		}
 
-		public int AfterCollideItemAffectScore (int hp,int score)
-		{
-			if (hp> 4) {
-				score = score + 100;
-				return score;
-			} else{
-				score = score + 100;
-				return score;
-			}
 
-		}
+		//public int AfterCollideItemAffectHp (int hp, ItemType type)
+		//{
+		//	if (hp < 5 && type == ItemType.health) {
+		//		hp = hp + 1;
+		//		return hp;
+		//	} else if (type == ItemType.bomb) {
+		//		hp = hp - 1;
+		//		return hp;
+		//	} else {
+		//		return hp;
+		//	}
+
+		//}
+
+		//public int AfterCollideItemAffectScore (int hp,int score)
+		//{
+		//	if (hp> 4) {
+		//		score = score + 100;
+		//		return score;
+		//	} else{
+		//		score = score + 100;
+		//		return score;
+		//	}
+
+		//}
 
 
 	}

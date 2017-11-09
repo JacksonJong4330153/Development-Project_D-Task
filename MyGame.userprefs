@@ -5,15 +5,16 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Class\Bullet.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src\GameMain.cs">
     <Files>
-      <File FileName="Class\Collision.cs" Line="69" Column="18" />
-      <File FileName="Class\Boss.cs" Line="12" Column="17" />
-      <File FileName="src\GameMain.cs" Line="82" Column="17" />
+      <File FileName="Class\Collision.cs" Line="91" Column="1" />
+      <File FileName="Class\Boss.cs" Line="53" Column="41" />
+      <File FileName="src\GameMain.cs" Line="20" Column="4" />
       <File FileName="Class\Trap.cs" Line="27" Column="36" />
       <File FileName="Class\TrapMovement.cs" Line="1" Column="1" />
       <File FileName="Class\Player.cs" Line="82" Column="1" />
       <File FileName="Class\Bullet.cs" Line="18" Column="3" />
+      <File FileName="Class\UnitTest.cs" Line="45" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
