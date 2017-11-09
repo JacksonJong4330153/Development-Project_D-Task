@@ -2,7 +2,7 @@
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug-Windows</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">Any CPU</Platform>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{871B5A90-103A-46A5-BBB9-07C02B9851D1}</ProjectGuid>
@@ -11,7 +11,7 @@
     <ApplicationIcon>Resources\SwinGame.ico</ApplicationIcon>
     <AssemblyName>MyGame</AssemblyName>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug-Windows|Any CPU' ">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugType>none</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug</OutputPath>
