@@ -23,18 +23,21 @@ namespace MyGame
 			b.getBullet.GetX = 0;
 			b.getBullet.GetY = 0;
 			Boss boss = new Boss ();
+			boss.getBossLife = 2;
 			Collision c = new Collision ();
 
 			int bosstimer = 2000;
 			Boolean potato = false;
 			Movement direction = Movement.Top;
 
-			bool co, co2, co3;
+			bool co, co2, co3,co4,co5,co6;
 			Font f = SwinGame.LoadFont (SwinGame.PathToResource ("arial.ttf", ResourceKind.FontResource), 30);
-			Point2D position, position2;
+			Point2D position, position2,position3;
 
 			position = SwinGame.PointAt (895, 110);
 			position2 = SwinGame.PointAt (895, 275);
+			position3 = SwinGame.PointAt (895, 430);
+
 			Point2D bosstextposition = SwinGame.PointAt (325, 325);
 
 			MapClass m = new MapClass ();
@@ -53,6 +56,7 @@ namespace MyGame
 				SwinGame.DrawBitmap ("BACK.png", 0, 0);
 				SwinGame.DrawText (p.getHealth.ToString (), Color.Red, f, position);
 				SwinGame.DrawText (p.getScore.ToString (), Color.Red, f, position2);
+				SwinGame.DrawText (boss.getBossLife.ToString (), Color.Red, f, position3);
 
 
 				m.draw ();
@@ -123,7 +127,6 @@ namespace MyGame
 				}
 
 				co = c.CheckCollideTrap1 (p, t);
-				co3 = c.CheckCollideTrap2 (p, t);
 				if (co == true) {
 					p.getHealth = c.AfterCollideTrap (p.getHealth);
 					co = false;
@@ -131,6 +134,16 @@ namespace MyGame
 					SwinGame.PlaySoundEffect ("explode.wav");
 				}
 
+				co2 = c.BulletAndBoss (boss, b);
+				if (co2 == true) {
+					boss.getBossLife = boss.getBossLife - 1;
+					p.getScore = p.getScore + 10;
+					boss.checkTime ();
+					SwinGame.PlaySoundEffect ("explode.wav");
+					co2 = false;
+				}
+
+				co3 = c.CheckCollideTrap2 (p, t);
 				if (co3 == true) {
 					p.getHealth = c.AfterCollideTrap (p.getHealth);
 					co3 = false;
@@ -138,8 +151,28 @@ namespace MyGame
 					SwinGame.PlaySoundEffect ("explode.wav");
 				}
 
+				//co4 = c.LaserAndPlayer (p, boss);
+				//if (co4 == true) {
+				//	p.getHealth = p.getHealth - 1;
+				//	co4 = false;
+				//}
 
 
+				co5 = c.BulletAndMeteor1 (b, t);
+				if (co5 == true) {
+					p.getScore = p.getScore + 10;
+					t.randomposition ();
+					potato = false;
+					co5 = false;
+				}
+
+				co6 = c.BulletAndMeteor2 (b, t);
+				if (co6 == true){
+					p.getScore = p.getScore + 10;
+					t.randomposition2 ();
+					potato = false;
+					co6 = false;
+				}
 
 
 				if (p.getScore == 0) {
@@ -161,16 +194,11 @@ namespace MyGame
 					}
 				}
 
-				co2 = c.BulletAndBoss (boss, b);
-				if (co2 == true) {
-					boss.getBossLife = boss.getBossLife - 1;
-					p.getScore = p.getScore + 10;
-					boss.spawnBoss ();
-					boss.checkTime ();
-					SwinGame.PlaySoundEffect ("explode.wav");
-					co2 = false;
+
+
+				if (boss.getBossLife == 0) {
+					boss.getBoss.GetX = -200;
 				}
-				//t.checkscore (p.getScore);
 
 				if (p.getHealth == 0) {
 

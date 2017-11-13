@@ -6,11 +6,17 @@ namespace MyGame
 	public class Boss
 	{
 		private TrapMovement _boss;
+		private Player p;
+
 		private int _time;
 		private int _bosshp;
 		private int _firetime;
 		private int _currentPosition;
 		private int _spawnPosition;
+
+		bool Isfire;
+
+		//private int firepositionx, firepositiony;
 
 		Random random_generator = new Random ();
 		List<int> Position = new List<int> { 225, 325, 425 };
@@ -22,6 +28,7 @@ namespace MyGame
 			_boss.GetX = 325;
 			_boss.GetY = -100;
 			_bosshp = 20;
+			Isfire = false;
 		}
 		public TrapMovement getBoss {
 			get { return _boss; }
@@ -31,6 +38,10 @@ namespace MyGame
 		public int getBossLife {
 			get { return _bosshp; }
 			set { _bosshp = value; }
+		}
+
+		public bool _getfire {
+			get { return Isfire;}
 		}
 
 
@@ -63,13 +74,18 @@ namespace MyGame
 		public void bossfire ()
 		{
 			if (_time >= 1000 && _time <= 3000) {
+				Isfire = true;
 				do {
 					if (_firetime != 0) {
 						_firetime = _firetime - 10;
 					}
-					SwinGame.DrawBitmap ("laser.png", getBoss.GetX+25, getBoss.GetY + 25);
+					SwinGame.DrawBitmap ("laser.png", _boss.GetX + 25, _boss.GetY + 25);
+
 
 				} while (_firetime != 0);
+
+			} else {
+				Isfire = false;
 			}
 		}
 	}

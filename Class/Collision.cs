@@ -50,14 +50,42 @@ namespace MyGame
 
 		public Boolean BulletAndBoss (Boss boss, Bullet b)
 		{
-			if ((boss.getBoss.GetX > (b.getBullet.GetX - 10) && boss.getBoss.GetX < (b.getBullet.GetX + 10))
-				&& (boss.getBoss.GetY > (b.getBullet.GetY - 10) && boss.getBoss.GetY < (b.getBullet.GetY + 10))) {
+			if ((boss.getBoss.GetX == b.getBullet.GetX && boss.getBoss.GetY == b.getBullet.GetY)) {
 				return true;
 			} else {
 				return false;
 			}
 		}
 
+		public Boolean LaserAndPlayer (Player p, Boss boss)
+		{
+			if (boss.getBoss.GetX == p.getMove.GetX && boss._getfire == true) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+
+
+		public Boolean BulletAndMeteor1 (Bullet b, Trap t)
+		{
+			if ((b.getBullet.GetX > (t.getTrap.GetX - 50)) && (b.getBullet.GetX < (t.getTrap.GetX + 50))
+			    && (b.getBullet.GetY > (t.getTrap.GetY - 50)) && (b.getBullet.GetY < (t.getTrap.GetY + 50))) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+
+		public Boolean BulletAndMeteor2 (Bullet b, Trap t)
+		{
+			if ((b.getBullet.GetX > (t.getTrap2.GetX - 50)) && (b.getBullet.GetX < (t.getTrap2.GetX + 50))
+				&& (b.getBullet.GetY > (t.getTrap2.GetY - 50)) && (b.getBullet.GetY < (t.getTrap2.GetY + 50))) {
+				return true;
+			} else {
+				return false;
+			}
+		}
 
 		//public int AfterCollideItemAffectHp (int hp, ItemType type)
 		//{
