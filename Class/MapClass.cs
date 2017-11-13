@@ -57,22 +57,23 @@ namespace MyGame
 				//}
 
 				//check mouse position
-				if (SwinGame.PointInRect (SwinGame.MousePosition (), 141, 150, 470, 55))
+				//x, y, w, h
+				if (SwinGame.PointInRect (SwinGame.MousePosition (), 370, 150, 300, 70))
 					SwinGame.DrawText (draw_text, Color.Blue, "maven_pro_regular", pos1, pos2, pos3);
 				else
 					SwinGame.DrawText (draw_text, Color.White, "maven_pro_regular", pos1, pos2, pos3);
 
-				if (SwinGame.PointInRect (SwinGame.MousePosition (), 110, 250, 530, 55))
+				if (SwinGame.PointInRect (SwinGame.MousePosition (), 370, 250, 300, 70))
 					SwinGame.DrawText ("HighScore", Color.Blue, "maven_pro_regular", 50, 400, 270);
 				else
 					SwinGame.DrawText ("HighScore", Color.White, "maven_pro_regular", 50, 400, 270);
 
-				if (SwinGame.PointInRect (SwinGame.MousePosition (), 100, 350, 470, 55))
+				if (SwinGame.PointInRect (SwinGame.MousePosition (), 370, 350, 300, 70))
 					SwinGame.DrawText ("Instruction", Color.Blue, "maven_pro_regular", 50, 400, 370);
 				else
 					SwinGame.DrawText ("Instruction", Color.White, "maven_pro_regular", 50, 400, 370);
 
-				if (SwinGame.PointInRect (SwinGame.MousePosition (), 140, 450, 470, 55))
+				if (SwinGame.PointInRect (SwinGame.MousePosition (), 370, 450, 300, 70))
 					SwinGame.DrawText ("Quit Game", Color.Blue, "maven_pro_regular", 50, 400, 470);
 				else
 					SwinGame.DrawText ("Quit Game", Color.White, "maven_pro_regular", 50, 400, 470);
