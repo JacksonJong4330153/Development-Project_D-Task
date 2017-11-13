@@ -27,6 +27,7 @@ namespace MyGame
 			Collision c = new Collision ();
 
 			int bosstimer = 2000;
+			int getHitTimer = 600;
 			Boolean potato = false;
 			Movement direction = Movement.Top;
 
@@ -151,11 +152,16 @@ namespace MyGame
 					SwinGame.PlaySoundEffect ("explode.wav");
 				}
 
-				//co4 = c.LaserAndPlayer (p, boss);
-				//if (co4 == true) {
-				//	p.getHealth = p.getHealth - 1;
-				//	co4 = false;
-				//}
+				co4 = c.LaserAndPlayer (p, boss);
+				if (co4 == true) {
+					if (getHitTimer != 0) {
+						getHitTimer = getHitTimer - 10;
+					}else if(getHitTimer == 0){
+						p.getHealth = p.getHealth - 1;
+						co4 = false;
+						getHitTimer = 600;
+					}
+				}
 
 
 				co5 = c.BulletAndMeteor1 (b, t);
