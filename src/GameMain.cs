@@ -42,7 +42,7 @@ namespace MyGame
 
 			MapClass m = new MapClass ();
 
-			m.startgame ();
+			m.startgame ("mainmenu");
 			//Run the game loop
 			while (false == SwinGame.WindowCloseRequested ()) {
 				//Fetch the next batch of UI interaction
@@ -214,7 +214,10 @@ namespace MyGame
 					t.randomposition2 ();
 				}
 
-
+				//get pause game screen
+				if (SwinGame.KeyTyped (KeyCode.vk_ESCAPE)){
+					m.startgame ("pausemenu");
+				}
 
 				//Draw onto the screen
 				SwinGame.RefreshScreen (60);

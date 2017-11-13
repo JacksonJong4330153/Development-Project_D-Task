@@ -319,3 +319,5 @@ C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bi
 C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bin\Debug\bullet.png
 C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bin\Debug\laser.png
 C:\Users\Jackson\Development-Project_D-Task\bin\Debug\laser.png
+C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\laser.png
+C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\mainmenu.jpg

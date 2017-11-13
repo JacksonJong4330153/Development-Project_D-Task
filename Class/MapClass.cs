@@ -7,6 +7,8 @@ namespace MyGame
 	public class MapClass
 	{
 		bool test;
+		string draw_text;
+		int pos1, pos2, pos3;
 
 		public void draw ()
 		{
@@ -21,19 +23,76 @@ namespace MyGame
 			SwinGame.DrawRectangle (Color.Yellow, 415, 410, 100, 100);
 		}
 
-		public void startgame ()
+		public void startgame (string dtext)
 		{
 			while (false == SwinGame.WindowCloseRequested ()) {
+				if (dtext == "mainmenu") {
+					//set text
+					draw_text = "Play Game";
+					pos1 = 50;
+					pos2 = 400;
+					pos3 = 170;
+				} else if (dtext == "pausemenu") {
+					//set text
+					draw_text = "Resume Game";
+					pos1 = 50;
+					pos2 = 350;
+					pos3 = 170;
+				}
+
 				SwinGame.ProcessEvents ();
-				SwinGame.DrawBitmap ("instruction.png", 0, 0);
+				//draw beautiful BG
+				SwinGame.DrawBitmap ("mainmenu.jpg", 0, 0);
 
+				//display Menu
+				SwinGame.DrawText ("SpaceShip - The Game", Color.White, "maven_pro_regular", 60, 210, 50);
 
-				if (SwinGame.KeyTyped (KeyCode.vk_SPACE)){
+				SwinGame.DrawText (draw_text, Color.White, "maven_pro_regular", pos1, pos2, pos3);
+				SwinGame.DrawText ("HighScore", Color.White, "maven_pro_regular", 50, 400, 270);
+				SwinGame.DrawText ("Instruction", Color.White, "maven_pro_regular", 50, 400, 370);
+				SwinGame.DrawText ("Quit Game", Color.White, "maven_pro_regular", 50, 400, 470);
+
+				//if (SwinGame.KeyTyped (KeyCode.vk_SPACE)){
+				//	break;
+				//}
+
+				//check mouse position
+				if (SwinGame.PointInRect (SwinGame.MousePosition (), 141, 150, 470, 55))
+					SwinGame.DrawText (draw_text, Color.Blue, "maven_pro_regular", pos1, pos2, pos3);
+				else
+					SwinGame.DrawText (draw_text, Color.White, "maven_pro_regular", pos1, pos2, pos3);
+
+				if (SwinGame.PointInRect (SwinGame.MousePosition (), 110, 250, 530, 55))
+					SwinGame.DrawText ("HighScore", Color.Blue, "maven_pro_regular", 50, 400, 270);
+				else
+					SwinGame.DrawText ("HighScore", Color.White, "maven_pro_regular", 50, 400, 270);
+
+				if (SwinGame.PointInRect (SwinGame.MousePosition (), 100, 350, 470, 55))
+					SwinGame.DrawText ("Instruction", Color.Blue, "maven_pro_regular", 50, 400, 370);
+				else
+					SwinGame.DrawText ("Instruction", Color.White, "maven_pro_regular", 50, 400, 370);
+
+				if (SwinGame.PointInRect (SwinGame.MousePosition (), 140, 450, 470, 55))
+					SwinGame.DrawText ("Quit Game", Color.Blue, "maven_pro_regular", 50, 400, 470);
+				else
+					SwinGame.DrawText ("Quit Game", Color.White, "maven_pro_regular", 50, 400, 470);
+
+				//Do function when clicked
+				if (SwinGame.MouseClicked (MouseButton.LeftButton) && SwinGame.PointInRect (SwinGame.MousePosition (), 141, 150, 470, 55)) {
 					break;
+				}
+				if (SwinGame.MouseClicked (MouseButton.LeftButton) && SwinGame.PointInRect (SwinGame.MousePosition (), 141, 250, 470, 55)) {
+					//show score here
+				}
+				if (SwinGame.MouseClicked (MouseButton.LeftButton) && SwinGame.PointInRect (SwinGame.MousePosition (), 101, 350, 470, 55)) {
+					drawInstruction (true);
+				}
+				if (SwinGame.MouseClicked (MouseButton.LeftButton) && SwinGame.PointInRect (SwinGame.MousePosition (), 141, 450, 470, 55)) {
+					//quit game here
 				}
 
 				SwinGame.RefreshScreen (60);
-			}
+			}	
 		}
 
 		public void gameover (int score)
@@ -58,11 +117,17 @@ namespace MyGame
 			test = false;
 		}
 
-
-		public void RestartGame ()
+		public void drawInstruction (bool b)
 		{
-			
+			while (b == true) {
+				SwinGame.ProcessEvents ();
+				SwinGame.DrawBitmap ("instruction.png", 0, 0);
 
+				SwinGame.RefreshScreen (60);
+				if (SwinGame.KeyTyped (KeyCode.vk_SPACE)) {
+					break;
+				}
+			}
 		}
 	}
 }
