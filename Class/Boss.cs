@@ -67,7 +67,8 @@ namespace MyGame
 					if (_firetime != 0) {
 						_firetime = _firetime - 10;
 					}
-					SwinGame.FillRectangle (Color.Red, getBoss.GetX + 25, getBoss.GetY + 75, 50, 400);
+					SwinGame.DrawBitmap ("laser.png", getBoss.GetX+25, getBoss.GetY + 25);
+
 				} while (_firetime != 0);
 			}
 		}
