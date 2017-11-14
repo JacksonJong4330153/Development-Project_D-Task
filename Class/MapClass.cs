@@ -58,38 +58,38 @@ namespace MyGame
 
 				//check mouse position
 				//x, y, w, h
-				if (SwinGame.PointInRect (SwinGame.MousePosition (), 370, 150, 300, 70))
+				if (SwinGame.PointInRect (SwinGame.MousePosition (), 370, 160, 300, 100))
 					SwinGame.DrawText (draw_text, Color.BlueViolet, "maven_pro_regular", pos1, pos2, pos3);
 				else
 					SwinGame.DrawText (draw_text, Color.White, "maven_pro_regular", pos1, pos2, pos3);
 
-				if (SwinGame.PointInRect (SwinGame.MousePosition (), 370, 250, 300, 70))
+				if (SwinGame.PointInRect (SwinGame.MousePosition (), 380, 260, 330, 100))
 					SwinGame.DrawText ("HighScore", Color.BlueViolet, "maven_pro_regular", 50, 400, 270);
 				else
 					SwinGame.DrawText ("HighScore", Color.White, "maven_pro_regular", 50, 400, 270);
 
-				if (SwinGame.PointInRect (SwinGame.MousePosition (), 370, 350, 300, 70))
+				if (SwinGame.PointInRect (SwinGame.MousePosition (), 380, 360, 330, 100))
 					SwinGame.DrawText ("Instruction", Color.BlueViolet, "maven_pro_regular", 50, 400, 370);
 				else
 					SwinGame.DrawText ("Instruction", Color.White, "maven_pro_regular", 50, 400, 370);
 
-				if (SwinGame.PointInRect (SwinGame.MousePosition (), 370, 450, 300, 70))
+				if (SwinGame.PointInRect (SwinGame.MousePosition (), 380, 460, 330, 100))
 					SwinGame.DrawText ("Quit Game", Color.BlueViolet, "maven_pro_regular", 50, 400, 470);
 				else
 					SwinGame.DrawText ("Quit Game", Color.White, "maven_pro_regular", 50, 400, 470);
 
 				//Do function when clicked
-				if (SwinGame.MouseClicked (MouseButton.LeftButton) && SwinGame.PointInRect (SwinGame.MousePosition (), 141, 150, 470, 55)) {
+				if (SwinGame.MouseClicked (MouseButton.LeftButton) && SwinGame.PointInRect (SwinGame.MousePosition (), 141, 150, 500, 100)) {
 					break;
 				}
-				if (SwinGame.MouseClicked (MouseButton.LeftButton) && SwinGame.PointInRect (SwinGame.MousePosition (), 141, 250, 470, 55)) {
-					drawHighScore (true);
+				if (SwinGame.MouseClicked (MouseButton.LeftButton) && SwinGame.PointInRect (SwinGame.MousePosition (), 141, 250, 500, 100)) {
+                    drawHighScore (true);
 				}
-				if (SwinGame.MouseClicked (MouseButton.LeftButton) && SwinGame.PointInRect (SwinGame.MousePosition (), 101, 350, 470, 55)) {
+				if (SwinGame.MouseClicked (MouseButton.LeftButton) && SwinGame.PointInRect (SwinGame.MousePosition (), 141, 350, 500, 100)) {
 					drawInstruction (true);
 				}
-				if (SwinGame.MouseClicked (MouseButton.LeftButton) && SwinGame.PointInRect (SwinGame.MousePosition (), 141, 450, 470, 55)) {
-					//quit game here
+				if (SwinGame.MouseClicked (MouseButton.LeftButton) && SwinGame.PointInRect (SwinGame.MousePosition (), 141, 450, 500, 100)) {
+					Environment.Exit (exitCode: 0);
 				}
 
 				SwinGame.RefreshScreen (60);
@@ -125,7 +125,7 @@ namespace MyGame
 				SwinGame.DrawBitmap ("instruction.png", 0, 0);
 
 				SwinGame.RefreshScreen (60);
-				if (SwinGame.KeyTyped (KeyCode.vk_SPACE)) {
+				if ((SwinGame.AnyKeyPressed() || SwinGame.MouseClicked(MouseButton.LeftButton) || SwinGame.MouseClicked(MouseButton.RightButton))) {
 					break;
 				}
 			}
@@ -139,7 +139,7 @@ namespace MyGame
 				HighScoreController.DrawHighScores ();
 
 				SwinGame.RefreshScreen (60);
-				if (SwinGame.KeyTyped (KeyCode.vk_SPACE)) {
+				if ((SwinGame.AnyKeyPressed() || SwinGame.MouseClicked(MouseButton.LeftButton) || SwinGame.MouseClicked(MouseButton.RightButton))) {
 					break;
 				}
 			}
