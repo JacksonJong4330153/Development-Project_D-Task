@@ -59,22 +59,22 @@ namespace MyGame
 				//check mouse position
 				//x, y, w, h
 				if (SwinGame.PointInRect (SwinGame.MousePosition (), 370, 150, 300, 70))
-					SwinGame.DrawText (draw_text, Color.Blue, "maven_pro_regular", pos1, pos2, pos3);
+					SwinGame.DrawText (draw_text, Color.BlueViolet, "maven_pro_regular", pos1, pos2, pos3);
 				else
 					SwinGame.DrawText (draw_text, Color.White, "maven_pro_regular", pos1, pos2, pos3);
 
 				if (SwinGame.PointInRect (SwinGame.MousePosition (), 370, 250, 300, 70))
-					SwinGame.DrawText ("HighScore", Color.Blue, "maven_pro_regular", 50, 400, 270);
+					SwinGame.DrawText ("HighScore", Color.BlueViolet, "maven_pro_regular", 50, 400, 270);
 				else
 					SwinGame.DrawText ("HighScore", Color.White, "maven_pro_regular", 50, 400, 270);
 
 				if (SwinGame.PointInRect (SwinGame.MousePosition (), 370, 350, 300, 70))
-					SwinGame.DrawText ("Instruction", Color.Blue, "maven_pro_regular", 50, 400, 370);
+					SwinGame.DrawText ("Instruction", Color.BlueViolet, "maven_pro_regular", 50, 400, 370);
 				else
 					SwinGame.DrawText ("Instruction", Color.White, "maven_pro_regular", 50, 400, 370);
 
 				if (SwinGame.PointInRect (SwinGame.MousePosition (), 370, 450, 300, 70))
-					SwinGame.DrawText ("Quit Game", Color.Blue, "maven_pro_regular", 50, 400, 470);
+					SwinGame.DrawText ("Quit Game", Color.BlueViolet, "maven_pro_regular", 50, 400, 470);
 				else
 					SwinGame.DrawText ("Quit Game", Color.White, "maven_pro_regular", 50, 400, 470);
 
@@ -83,7 +83,7 @@ namespace MyGame
 					break;
 				}
 				if (SwinGame.MouseClicked (MouseButton.LeftButton) && SwinGame.PointInRect (SwinGame.MousePosition (), 141, 250, 470, 55)) {
-					//show score here
+					drawHighScore (true);
 				}
 				if (SwinGame.MouseClicked (MouseButton.LeftButton) && SwinGame.PointInRect (SwinGame.MousePosition (), 101, 350, 470, 55)) {
 					drawInstruction (true);
@@ -123,6 +123,20 @@ namespace MyGame
 			while (b == true) {
 				SwinGame.ProcessEvents ();
 				SwinGame.DrawBitmap ("instruction.png", 0, 0);
+
+				SwinGame.RefreshScreen (60);
+				if (SwinGame.KeyTyped (KeyCode.vk_SPACE)) {
+					break;
+				}
+			}
+		}
+
+
+		public void drawHighScore (bool b)
+		{
+			while (b == true) {
+				SwinGame.ProcessEvents ();
+				HighScoreController.DrawHighScores ();
 
 				SwinGame.RefreshScreen (60);
 				if (SwinGame.KeyTyped (KeyCode.vk_SPACE)) {

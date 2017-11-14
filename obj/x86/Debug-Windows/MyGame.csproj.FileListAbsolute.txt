@@ -377,3 +377,5 @@ C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\New Version\Development-Proje
 C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\New Version\Development-Project_D-Task\bin\Debug\normnfkd.nlp
 C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\New Version\Development-Project_D-Task\obj\x86\Debug-Windows\MyGame.csprojResolveAssemblyReference.cache
 C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\New Version\Development-Project_D-Task\obj\x86\Debug-Windows\MyGame.exe
+C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\Resources\highscore.txt
+C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\Resources\fonts\Envy Code R.ttf
