@@ -5,15 +5,14 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Development-Project_D-Task Status">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src\GameMain.cs">
     <Files>
-      <File FileName="src\GameMain.cs" Line="156" Column="23" />
+      <File FileName="src\GameMain.cs" Line="182" Column="5" />
       <File FileName="Class\MapClass.cs" Line="1" Column="1" />
-      <File FileName="Class\Player.cs" Line="76" Column="34" />
-      <File FileName="Class\Laser.cs" Line="1" Column="1" />
+      <File FileName="Class\Player.cs" Line="78" Column="4" />
       <File FileName="Class\ItemType.cs" Line="1" Column="1" />
-      <File FileName="Class\Collision.cs" Line="1" Column="1" />
-      <File FileName="Development-Project_D-Task Status" />
+      <File FileName="Class\Collision.cs" Line="74" Column="49" />
+      <File FileName="Class\Boss.cs" Line="86" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />

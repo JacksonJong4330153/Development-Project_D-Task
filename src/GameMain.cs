@@ -27,8 +27,8 @@ namespace MyGame
 			Collision c = new Collision ();
 
 			int bosstimer = 2000;
-			int getHitTimer = 600;
-			Boolean potato = false;
+			int getHitTimer = 200;
+			bool potato = false;
 			Movement direction = Movement.Top;
 
 			bool co, co2, co3,co4,co5,co6;
@@ -159,12 +159,12 @@ namespace MyGame
 					}else if(getHitTimer == 0){
 						p.getHealth = p.getHealth - 1;
 						co4 = false;
-						getHitTimer = 600;
+						getHitTimer = 200;
 					}
 				}
 
 
-				co5 = c.BulletAndMeteor1 (b, t);
+				co5 = c.BulletAndMeteor1 (b, t,potato);
 				if (co5 == true) {
 					p.getScore = p.getScore + 10;
 					t.randomposition ();
@@ -172,7 +172,7 @@ namespace MyGame
 					co5 = false;
 				}
 
-				co6 = c.BulletAndMeteor2 (b, t);
+				co6 = c.BulletAndMeteor2 (b, t,potato);
 				if (co6 == true){
 					p.getScore = p.getScore + 10;
 					t.randomposition2 ();
@@ -181,7 +181,7 @@ namespace MyGame
 				}
 
 
-				if (p.getScore == 0) {
+				if (p.getScore > 0) {
 					if (bosstimer != 0) {
 						bosstimer = bosstimer - 10;
 						SwinGame.DrawText ("Enemy appear!!!!", Color.Red, f, bosstextposition);

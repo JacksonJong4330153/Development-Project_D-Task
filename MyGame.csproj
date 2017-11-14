@@ -87,7 +87,6 @@
     <Compile Include="Class\UnitTest.cs" />
     <Compile Include="Class\Boss.cs" />
     <Compile Include="Class\Bullet.cs" />
-    <Compile Include="Class\Laser.cs" />
     <Compile Include="Class\HighScore.cs" />
   </ItemGroup>
   <ItemGroup>

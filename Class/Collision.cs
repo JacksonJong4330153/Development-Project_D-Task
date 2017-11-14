@@ -67,24 +67,37 @@ namespace MyGame
 		}
 
 
-		public Boolean BulletAndMeteor1 (Bullet b, Trap t)
+		public Boolean BulletAndMeteor1 (Bullet b, Trap t, bool p)
 		{
-			if ((b.getBullet.GetX > (t.getTrap.GetX - 50)) && (b.getBullet.GetX < (t.getTrap.GetX + 50))
-			    && (b.getBullet.GetY > (t.getTrap.GetY - 50)) && (b.getBullet.GetY < (t.getTrap.GetY + 50))) {
+			if ((b.getBullet.GetX > t.getTrap.GetX - 50) && (b.getBullet.GetX < t.getTrap.GetX + 50)
+			    && (b.getBullet.GetY > t.getTrap.GetY - 50) && (b.getBullet.GetY < t.getTrap.GetY + 50)
+			    && (p != false)) {
 				return true;
 			} else {
 				return false;
 			}
+			//if ((b.getBullet.GetX == t.getTrap.GetX && b.getBullet.GetY == t.getTrap.GetY) && b.getBullet.GetX != p.getMove.GetX) {
+			//	return true;
+			//} else {
+			//	return false;
+			//}
+
 		}
 
-		public Boolean BulletAndMeteor2 (Bullet b, Trap t)
+		public Boolean BulletAndMeteor2 (Bullet b, Trap t, bool p)
 		{
-			if ((b.getBullet.GetX > (t.getTrap2.GetX - 50)) && (b.getBullet.GetX < (t.getTrap2.GetX + 50))
-				&& (b.getBullet.GetY > (t.getTrap2.GetY - 50)) && (b.getBullet.GetY < (t.getTrap2.GetY + 50))) {
+			if ((b.getBullet.GetX > t.getTrap2.GetX - 50) && (b.getBullet.GetX < t.getTrap2.GetX + 50)
+				&& (b.getBullet.GetY > t.getTrap2.GetY - 50) && (b.getBullet.GetY < t.getTrap2.GetY + 50)
+			    && (p != false)) {
 				return true;
 			} else {
 				return false;
 			}
+			//if ((b.getBullet.GetX == t.getTrap.GetX && b.getBullet.GetY == t.getTrap.GetY) && b.getBullet.GetX != p.getMove.GetX) {
+			//	return true;
+			//} else {
+			//	return false;
+			//}
 		}
 
 		//public int AfterCollideItemAffectHp (int hp, ItemType type)
