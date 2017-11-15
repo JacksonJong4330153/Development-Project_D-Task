@@ -12,15 +12,16 @@ namespace MyGame
 
 		public void draw ()
 		{
-			SwinGame.DrawRectangle (Color.Yellow, 215, 210, 100, 100);
-			SwinGame.DrawRectangle (Color.Yellow, 215, 310, 100, 100);
-			SwinGame.DrawRectangle (Color.Yellow, 215, 410, 100, 100);
-			SwinGame.DrawRectangle (Color.Yellow, 315, 210, 100, 100);
-			SwinGame.DrawRectangle (Color.Yellow, 315, 310, 100, 100);
-			SwinGame.DrawRectangle (Color.Yellow, 315, 410, 100, 100);
-			SwinGame.DrawRectangle (Color.Yellow, 415, 210, 100, 100);
-			SwinGame.DrawRectangle (Color.Yellow, 415, 310, 100, 100);
-			SwinGame.DrawRectangle (Color.Yellow, 415, 410, 100, 100);
+			//SwinGame.DrawRectangle (Color.Yellow, 215, 210, 100, 100);
+			//SwinGame.DrawRectangle (Color.Yellow, 215, 310, 100, 100);
+			//SwinGame.DrawRectangle (Color.Yellow, 215, 410, 100, 100);
+			//SwinGame.DrawRectangle (Color.Yellow, 315, 210, 100, 100);
+			//SwinGame.DrawRectangle (Color.Yellow, 315, 310, 100, 100);
+			//SwinGame.DrawRectangle (Color.Yellow, 315, 410, 100, 100);
+			//SwinGame.DrawRectangle (Color.Yellow, 415, 210, 100, 100);
+			//SwinGame.DrawRectangle (Color.Yellow, 415, 310, 100, 100);
+			//SwinGame.DrawRectangle (Color.Yellow, 415, 410, 100, 100);
+			SwinGame.DrawBitmap ("spacebattleship.png", 165, 180);
 		}
 
 		public void startgame (string dtext)
@@ -102,10 +103,9 @@ namespace MyGame
 
 			while (test == false) {
 				SwinGame.ProcessEvents ();
-				SwinGame.DrawBitmap ("End.png", 0, 0);
-
-				SwinGame.DrawText ("Your score is " + score.ToString (), Color.White, f, 320, 330);
-				SwinGame.DrawText ("Press Space to Restart the game", Color.Red, f, 120, 430);
+				SwinGame.DrawBitmap ("End.png", -100, 0);
+				SwinGame.DrawText ("Score: " + score.ToString (), Color.White, SwinGame.LoadFont (SwinGame.PathToResource ("arial.ttf", ResourceKind.FontResource), 40), 420, 330);
+				SwinGame.DrawText ("Press Space to Restart the game", Color.Red, SwinGame.LoadFont (SwinGame.PathToResource ("arial.ttf", ResourceKind.FontResource), 30), 270, 500);
 
 				if (SwinGame.KeyTyped (KeyCode.vk_SPACE)) {
 					test = true;

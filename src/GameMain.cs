@@ -64,6 +64,7 @@ namespace MyGame
 				m.draw ();
 				p.Draw ();
 				t.draw ();
+
 				ingameTimer.drawTimer ();
 
 				t.drop ();
@@ -219,6 +220,7 @@ namespace MyGame
 					t.getTrap2.getSpeed = 5;
 					t.randomposition ();
 					t.randomposition2 ();
+
 				}
 
 				//get pause game screen

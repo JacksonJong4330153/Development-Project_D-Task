@@ -49,13 +49,15 @@ namespace MyGame
 		public void Draw ()
 		{
 			if (getFaceDirection == Movement.Left) {
-				SwinGame.DrawBitmap ("ship.left.png", _pmove.GetX, _pmove.GetY);
+				//SwinGame.DrawBitmap ("ship.left.png", _pmove.GetX, _pmove.GetY);
+				SwinGame.DrawBitmap ("cannonleft.png", _pmove.GetX, _pmove.GetY);
 			} else if (getFaceDirection == Movement.Right) {
-				SwinGame.DrawBitmap ("ship.right.png", _pmove.GetX, _pmove.GetY);
+				SwinGame.DrawBitmap ("cannonright.png", _pmove.GetX, _pmove.GetY);
 			} else if (getFaceDirection == Movement.Bottom) {
-				SwinGame.DrawBitmap ("ship.bottom.png", _pmove.GetX, _pmove.GetY);
+				SwinGame.DrawBitmap ("cannonbottom.png", _pmove.GetX, _pmove.GetY);
 			} else {
-				SwinGame.DrawBitmap ("ship.top.png", _pmove.GetX, _pmove.GetY);
+				//SwinGame.DrawBitmap ("ship.top.png", _pmove.GetX, _pmove.GetY);
+				SwinGame.DrawBitmap ("cannon.png", _pmove.GetX, _pmove.GetY);
 			}
 
 		}
