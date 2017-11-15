@@ -382,3 +382,6 @@ C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\Resources\fonts\Envy Code 
 C:\Users\Jackson\Development-Project_D-Task\bin\Debug\mainmenu.jpg
 C:\Users\Jackson\Development-Project_D-Task\bin\Debug\Resources\highscore.txt
 C:\Users\Jackson\Development-Project_D-Task\bin\Debug\Resources\fonts\Envy Code R.ttf
+C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bin\Debug\Resources\highscore.txt
+C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bin\Debug\Resources\fonts\Envy Code R.ttf
+C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bin\Debug\mainmenu.jpg

@@ -25,6 +25,7 @@ namespace MyGame
 			Boss boss = new Boss ();
 			boss.getBossLife = 2;
 			Collision c = new Collision ();
+			InGameTimer ingameTimer = new InGameTimer ();
 
 			int bosstimer = 2000;
 			int getHitTimer = 200;
@@ -63,7 +64,7 @@ namespace MyGame
 				m.draw ();
 				p.Draw ();
 				t.draw ();
-
+				ingameTimer.drawTimer ();
 
 				t.drop ();
 
