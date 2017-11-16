@@ -4,11 +4,20 @@ using SwinGameSDK;
 
 namespace MyGame
 {
-	public class MapClass
-	{
-		bool test;
-		string draw_text;
+		public class MapClass
+		{
+		bool game_over;
+		string draw_text, draw_text2;
 		int pos1, pos2, pos3;
+		int pos4, pos5, pos6;
+		string game = "gstart";
+
+		bool endgame = false;
+
+		public bool getRestart {
+			get { return endgame; }
+			set { endgame = value; } 
+		}
 
 		public void draw ()
 		{
@@ -33,12 +42,26 @@ namespace MyGame
 					pos1 = 50;
 					pos2 = 400;
 					pos3 = 170;
+
+					draw_text2 = "Quit Game";
+					pos4 = 50;
+					pos5 = 400;
+					pos6 = 470;
+
+					game = "gstart";
 				} else if (dtext == "pausemenu") {
 					//set text
 					draw_text = "Resume Game";
 					pos1 = 50;
 					pos2 = 350;
 					pos3 = 170;
+
+					draw_text2 = "Restart Game";
+					pos4 = 50;
+					pos5 = 360;
+					pos6 = 470;
+
+					game = "gend";
 				}
 
 				SwinGame.ProcessEvents ();
@@ -51,7 +74,7 @@ namespace MyGame
 				SwinGame.DrawText (draw_text, Color.White, "maven_pro_regular", pos1, pos2, pos3);
 				SwinGame.DrawText ("HighScore", Color.White, "maven_pro_regular", 50, 400, 270);
 				SwinGame.DrawText ("Instruction", Color.White, "maven_pro_regular", 50, 400, 370);
-				SwinGame.DrawText ("Quit Game", Color.White, "maven_pro_regular", 50, 400, 470);
+				SwinGame.DrawText (draw_text2, Color.White, "maven_pro_regular", pos4, pos5, pos6);
 
 				//if (SwinGame.KeyTyped (KeyCode.vk_SPACE)){
 				//	break;
@@ -75,9 +98,9 @@ namespace MyGame
 					SwinGame.DrawText ("Instruction", Color.White, "maven_pro_regular", 50, 400, 370);
 
 				if (SwinGame.PointInRect (SwinGame.MousePosition (), 380, 460, 330, 100))
-					SwinGame.DrawText ("Quit Game", Color.BlueViolet, "maven_pro_regular", 50, 400, 470);
+					SwinGame.DrawText (draw_text2, Color.BlueViolet, "maven_pro_regular", pos4, pos5, pos6);
 				else
-					SwinGame.DrawText ("Quit Game", Color.White, "maven_pro_regular", 50, 400, 470);
+					SwinGame.DrawText (draw_text2, Color.White, "maven_pro_regular", pos4, pos5, pos6);
 
 				//Do function when clicked
 				if (SwinGame.MouseClicked (MouseButton.LeftButton) && SwinGame.PointInRect (SwinGame.MousePosition (), 141, 150, 500, 100)) {
@@ -90,32 +113,39 @@ namespace MyGame
 					drawInstruction (true);
 				}
 				if (SwinGame.MouseClicked (MouseButton.LeftButton) && SwinGame.PointInRect (SwinGame.MousePosition (), 141, 450, 500, 100)) {
-					Environment.Exit (exitCode: 0);
+					if (game == "gend" && dtext == "pausemenu") {
+						endgame = true;
+						break;
+					} else if (game == "gstart" && dtext == "mainmenu"){
+						Environment.Exit (exitCode: 0);
+					}
 				}
 
 				SwinGame.RefreshScreen (60);
 			}	
 		}
 
-		public void gameover (int score)
-		{ 
+		public void gameover (int score, string timer)
+		{
 			Font f = SwinGame.LoadFont (SwinGame.PathToResource ("arial.ttf", ResourceKind.FontResource), 50);
 
-			while (test == false) {
+			while (game_over == false) {
 				SwinGame.ProcessEvents ();
 				SwinGame.DrawBitmap ("End.png", -100, 0);
 				SwinGame.DrawText ("Score: " + score.ToString (), Color.White, SwinGame.LoadFont (SwinGame.PathToResource ("arial.ttf", ResourceKind.FontResource), 40), 420, 330);
+				SwinGame.DrawText ("Time: " + timer, Color.White, SwinGame.LoadFont (SwinGame.PathToResource ("arial.ttf", ResourceKind.FontResource), 40), 420, 370);
 				SwinGame.DrawText ("Press Space to Restart the game", Color.Red, SwinGame.LoadFont (SwinGame.PathToResource ("arial.ttf", ResourceKind.FontResource), 30), 270, 500);
 
 				if (SwinGame.KeyTyped (KeyCode.vk_SPACE)) {
-					test = true;
+					game_over = true;
+					startgame ("mainmenu");
 				}
 
 				SwinGame.RefreshScreen (60);
 			}
 
 			SwinGame.FreeFont (f);
-			test = false;
+			game_over = false;
 		}
 
 		public void drawInstruction (bool b)
@@ -143,6 +173,19 @@ namespace MyGame
 					break;
 				}
 			}
+		}
+
+
+		public void resetvalue (Player p, Trap t, Boss b)
+		{
+			p.getHealth = 5;
+			p.getScore = 0;
+			p.getMove.GetX = 325;
+			p.getMove.GetY = 325;
+			t.getTrap.getSpeed = 5;
+			t.getTrap2.getSpeed = 5;
+			t.randomposition ();
+			t.randomposition2 ();
 		}
 	}
 }

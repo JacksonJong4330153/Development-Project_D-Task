@@ -175,7 +175,6 @@ C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\Resources\sounds\error.wav
 C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\Resources\sounds\SwinGameStart.wav
 C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\Resources\SwinGame.icns
 C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\Resources\SwinGame.ico
-C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\BACK.png
 C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\batu.png
 C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\End.png
 C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\coin1.png
@@ -455,3 +454,11 @@ C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task - 
 C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task - Copy\bin\Debug\bullet.png
 C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task - Copy\bin\Debug\bulletleft.png
 C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task - Copy\bin\Debug\bulletright.png
+C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\background.jpg
+C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\spacebattleship.png
+C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\cannon.png
+C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\cannonbottom.png
+C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\cannonleft.png
+C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\cannonright.png
+C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\bulletleft.png
+C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\bulletright.png

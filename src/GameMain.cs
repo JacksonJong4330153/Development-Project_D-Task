@@ -194,34 +194,27 @@ namespace MyGame
 						boss.checkTime ();
 						boss.bossfire ();
 					}
-				} else {
-					if (bosstimer == 0) {
-						boss.getBoss.GetY = 0;
-						boss.draw ();
-						boss.checkTime ();
-						boss.bossfire ();
-					}
 				}
+
 				if (bosstimer == 0 && boss.getBossLife != 0) { 
 					SwinGame.DrawText ("BossHealth: "+boss.getBossLife.ToString (), Color.White, f, position3);
 				}
+
 				if (boss.getBossLife == 0) {
 					boss.getBoss.GetX = -200;
 				} 
 
-				if (p.getHealth == 0) {
+				if (p.getHealth == 0 || m.getRestart == true) {
 
 					SwinGame.PlaySoundEffect ("gameover.wav");
-					m.gameover (p.getScore);
-					p.getHealth = 5;
-					p.getScore = 0;
-					p.getMove.GetX = 325+100;
-					p.getMove.GetY = 325;
-					t.getTrap.getSpeed = 5;
-					t.getTrap2.getSpeed = 5;
-					t.randomposition ();
-					t.randomposition2 ();
 
+					m.gameover (p.getScore, ingameTimer.getTimer.ToString ());
+					ingameTimer.getX = 0;
+					ingameTimer.drawTimer ();
+					m.resetvalue (p, t, boss);
+					bosstimer = 2000;
+					boss = new Boss ();
+					m.getRestart = false;
 				}
 
 				//get pause game screen
