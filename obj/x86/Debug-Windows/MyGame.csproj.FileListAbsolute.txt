@@ -318,7 +318,6 @@ C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bi
 C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bin\Debug\laser.png
 C:\Users\Jackson\Development-Project_D-Task\bin\Debug\laser.png
 C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\laser.png
-C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\mainmenu.jpg
 C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\New Version\Development-Project_D-Task\bin\Debug\Resources\animations\startup.txt
 C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\New Version\Development-Project_D-Task\bin\Debug\Resources\bundles\FileDialog.txt
 C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\New Version\Development-Project_D-Task\bin\Debug\Resources\bundles\splash.txt
@@ -463,3 +462,4 @@ C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\bulletleft.png
 C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\bulletright.png
 C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\instruction.png
 C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\Resources\fonts\moonhouse.ttf
+C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\mainmenu.png

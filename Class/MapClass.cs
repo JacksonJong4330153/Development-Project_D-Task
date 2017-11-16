@@ -66,7 +66,7 @@ namespace MyGame
 
 				SwinGame.ProcessEvents ();
 				//draw beautiful BG
-				SwinGame.DrawBitmap ("mainmenu.jpg", 0, 0);
+				SwinGame.DrawBitmap ("mainmenu.png", 0, 0);
 				Font titlefont = SwinGame.LoadFont (SwinGame.PathToResource ("moonhouse.ttf", ResourceKind.FontResource), 60);
 				SwinGame.FontSetStyle (titlefont, FontStyle.UnderlineFont);
 				//display Menu, 60, 110, 50);
@@ -84,22 +84,22 @@ namespace MyGame
 				//check mouse position
 				//x, y, w, h
 				if (SwinGame.PointInRect (SwinGame.MousePosition (), 370, 160, 300, 100))
-					SwinGame.DrawText (draw_text, Color.BlueViolet, "maven_pro_regular", pos1, pos2, pos3);
+					SwinGame.DrawText (draw_text, Color.IndianRed, "maven_pro_regular", pos1, pos2, pos3);
 				else
 					SwinGame.DrawText (draw_text, Color.White, "maven_pro_regular", pos1, pos2, pos3);
 
 				if (SwinGame.PointInRect (SwinGame.MousePosition (), 380, 260, 330, 100))
-					SwinGame.DrawText ("HighScore", Color.BlueViolet, "maven_pro_regular", 50, 400, 270);
+					SwinGame.DrawText ("HighScore", Color.IndianRed, "maven_pro_regular", 50, 400, 270);
 				else
 					SwinGame.DrawText ("HighScore", Color.White, "maven_pro_regular", 50, 400, 270);
 
 				if (SwinGame.PointInRect (SwinGame.MousePosition (), 380, 360, 330, 100))
-					SwinGame.DrawText ("Instruction", Color.BlueViolet, "maven_pro_regular", 50, 400, 370);
+					SwinGame.DrawText ("Instruction", Color.IndianRed, "maven_pro_regular", 50, 400, 370);
 				else
 					SwinGame.DrawText ("Instruction", Color.White, "maven_pro_regular", 50, 400, 370);
 
 				if (SwinGame.PointInRect (SwinGame.MousePosition (), 380, 460, 330, 100))
-					SwinGame.DrawText (draw_text2, Color.BlueViolet, "maven_pro_regular", pos4, pos5, pos6);
+					SwinGame.DrawText (draw_text2, Color.IndianRed, "maven_pro_regular", pos4, pos5, pos6);
 				else
 					SwinGame.DrawText (draw_text2, Color.White, "maven_pro_regular", pos4, pos5, pos6);
 
