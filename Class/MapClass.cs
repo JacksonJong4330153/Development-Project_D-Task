@@ -67,9 +67,10 @@ namespace MyGame
 				SwinGame.ProcessEvents ();
 				//draw beautiful BG
 				SwinGame.DrawBitmap ("mainmenu.jpg", 0, 0);
-
-				//display Menu
-				SwinGame.DrawText ("SpaceShip - The Game", Color.White, "maven_pro_regular", 60, 210, 50);
+				Font titlefont = SwinGame.LoadFont (SwinGame.PathToResource ("moonhouse.ttf", ResourceKind.FontResource), 60);
+				SwinGame.FontSetStyle (titlefont, FontStyle.UnderlineFont);
+				//display Menu, 60, 110, 50);
+				SwinGame.DrawText ("SpaceShip - The Game", Color.Yellow, titlefont, 110, 50);
 
 				SwinGame.DrawText (draw_text, Color.White, "maven_pro_regular", pos1, pos2, pos3);
 				SwinGame.DrawText ("HighScore", Color.White, "maven_pro_regular", 50, 400, 270);
