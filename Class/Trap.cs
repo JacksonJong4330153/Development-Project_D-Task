@@ -9,6 +9,7 @@ namespace MyGame
 
 		private TrapMovement _trapmove, _trapmove2;
 		Random random_generator = new Random ();
+		List<int> PostitionX = new List<int> { 225+100, 325+100, 425+100 };
 		List<int> Postition = new List<int> { 225, 325, 425 };
 		List<String> MeteorType = new List<string> { "meteorSmall.png", "meteorMedium.png", "meteorBig.png" };
 		String meteor1;
@@ -94,7 +95,7 @@ namespace MyGame
 				} else { //let 1 be y = 700
 					getTrap.GetY = 800;
 				}
-				getTrap.GetX = Postition [random_generator.Next (0, 3)];
+				getTrap.GetX = PostitionX [random_generator.Next (0, 3)];
 
 				_getmove = testmove [random_generator.Next (0, 2)]; // let 0 = top, 1 = bottom
 
@@ -102,7 +103,7 @@ namespace MyGame
 				if (random_generator.Next (0, 2) == 0) { //let 0 be x = -10
 					getTrap.GetX = -100;
 				} else { //let 1 be x = 700
-					getTrap.GetX = 800;
+					getTrap.GetX = 800+100;
 				}
 				getTrap.GetY = Postition [random_generator.Next (0, 3)];
 
@@ -146,7 +147,7 @@ namespace MyGame
 				} else { //let 1 be y = 700
 					getTrap2.GetY = 800;
 				}
-				getTrap2.GetX = Postition [random_generator.Next (0, 3)];
+				getTrap2.GetX = PostitionX [random_generator.Next (0, 3)];
 
 				_getmove2 = testmove [random_generator.Next (0, 2)]; // let 0 = top, 1 = bottom
 
@@ -154,7 +155,7 @@ namespace MyGame
 				if (random_generator.Next (0, 2) == 0) { //let 0 be x = -10
 					getTrap2.GetX = -100;
 				} else { //let 1 be x = 700
-					getTrap2.GetX = 800;
+					getTrap2.GetX = 800+100;
 				}
 				getTrap2.GetY = Postition [random_generator.Next (0, 3)];
 

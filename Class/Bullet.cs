@@ -32,7 +32,13 @@ namespace MyGame
 
 		public void fire ()
 		{
-			SwinGame.DrawBitmap ("bullet.png", getBullet.GetX, getBullet.GetY);
+			if (getFaceDirection == Movement.Left) {
+				SwinGame.DrawBitmap ("bulletleft.png", getBullet.GetX, getBullet.GetY);
+			} else if (getFaceDirection == Movement.Right) {
+				SwinGame.DrawBitmap ("bulletright.png", getBullet.GetX, getBullet.GetY);
+			} else { 
+				SwinGame.DrawBitmap ("bullet.png", getBullet.GetX, getBullet.GetY);
+			}
 			getBullet.Moving (_facedirection);
 		}
 

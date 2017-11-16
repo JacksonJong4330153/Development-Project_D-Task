@@ -75,7 +75,7 @@ namespace MyGame
 
 		public void fire ()
 		{
-			SwinGame.DrawBitmap ("bullet.png", _getBullet.GetX, _getBullet.GetY);
+			
 			_getBullet.Moving (getFaceDirection);
 		}
 

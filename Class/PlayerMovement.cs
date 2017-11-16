@@ -6,7 +6,7 @@ namespace MyGame
 	{
 		public PlayerMovement ()
 		{
-			GetX = 325;
+			GetX = 325+100;
 			GetY = 325;
 		}
 
@@ -21,11 +21,11 @@ namespace MyGame
 					GetY = GetY + 100;
 				}
 			} else if (move == Movement.Left) {
-				if (GetX > 225) {
+				if (GetX - 100 > 225) {
 					GetX = GetX - 100;
 				}
 			} else if (move == Movement.Right) {
-				if (GetX < 425) {
+				if (GetX - 100 < 425) {
 					GetX = GetX + 100;
 				}
 			}

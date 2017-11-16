@@ -33,12 +33,12 @@ namespace MyGame
 			Movement direction = Movement.Top;
 
 			bool co, co2, co3,co4,co5,co6;
-			Font f = SwinGame.LoadFont (SwinGame.PathToResource ("arial.ttf", ResourceKind.FontResource), 30);
+			Font f = SwinGame.LoadFont (SwinGame.PathToResource ("arial.ttf", ResourceKind.FontResource), 25);
 			Point2D position, position2,position3;
 
-			position = SwinGame.PointAt (895, 110);
-			position2 = SwinGame.PointAt (895, 275);
-			position3 = SwinGame.PointAt (895, 430);
+			position = SwinGame.PointAt (225, 570);
+			position2 = SwinGame.PointAt (425, 570);
+			position3 = SwinGame.PointAt (625, 50);
 
 			Point2D bosstextposition = SwinGame.PointAt (325, 325);
 
@@ -55,10 +55,10 @@ namespace MyGame
 
 
 
-				SwinGame.DrawBitmap ("BACK.png", 0, 0);
-				SwinGame.DrawText (p.getHealth.ToString (), Color.Red, f, position);
-				SwinGame.DrawText (p.getScore.ToString (), Color.Red, f, position2);
-				SwinGame.DrawText (boss.getBossLife.ToString (), Color.Red, f, position3);
+				SwinGame.DrawBitmap ("background.jpg", 0, 0);
+				SwinGame.DrawText ("Health: "+p.getHealth.ToString (), Color.PaleVioletRed, f, position);
+				SwinGame.DrawText ("Score: "+p.getScore.ToString (), Color.White, f, position2);
+
 
 
 				m.draw ();
@@ -119,7 +119,7 @@ namespace MyGame
 
 					if (b.getFaceDirection == Movement.Left && b.getBullet.GetX < -10) {
 						potato = false;
-					} else if (b.getFaceDirection == Movement.Right && b.getBullet.GetX > 700) {
+					} else if (b.getFaceDirection == Movement.Right && b.getBullet.GetX > 990) {
 						potato = false;
 					} else if (b.getFaceDirection == Movement.Top && b.getBullet.GetY < -10) {
 						potato = false;
@@ -186,8 +186,9 @@ namespace MyGame
 				if (p.getScore > 0) {
 					if (bosstimer != 0) {
 						bosstimer = bosstimer - 10;
-						SwinGame.DrawText ("Enemy appear!!!!", Color.Red, f, bosstextposition);
+						SwinGame.DrawText ("Enemy appear!!!!", Color.Red, SwinGame.LoadFont (SwinGame.PathToResource ("arial.ttf", ResourceKind.FontResource), 50), bosstextposition);
 					} else if (bosstimer == 0) {
+						
 						boss.getBoss.GetY = 0;
 						boss.draw ();
 						boss.checkTime ();
@@ -201,12 +202,12 @@ namespace MyGame
 						boss.bossfire ();
 					}
 				}
-
-
-
+				if (bosstimer == 0 && boss.getBossLife != 0) { 
+					SwinGame.DrawText ("BossHealth: "+boss.getBossLife.ToString (), Color.White, f, position3);
+				}
 				if (boss.getBossLife == 0) {
 					boss.getBoss.GetX = -200;
-				}
+				} 
 
 				if (p.getHealth == 0) {
 
@@ -214,7 +215,7 @@ namespace MyGame
 					m.gameover (p.getScore);
 					p.getHealth = 5;
 					p.getScore = 0;
-					p.getMove.GetX = 325;
+					p.getMove.GetX = 325+100;
 					p.getMove.GetY = 325;
 					t.getTrap.getSpeed = 5;
 					t.getTrap2.getSpeed = 5;
