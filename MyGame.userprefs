@@ -5,12 +5,13 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="src\GameMain.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Class\Trap.cs">
     <Files>
       <File FileName="src\GameMain.cs" Line="223" Column="6" />
       <File FileName="Class\PlayerMovement.cs" Line="1" Column="1" />
-      <File FileName="Class\MapClass.cs" Line="118" Column="17" />
+      <File FileName="Class\MapClass.cs" Line="24" Column="55" />
       <File FileName="Class\Player.cs" Line="57" Column="39" />
+      <File FileName="Class\Trap.cs" Line="151" Column="84" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />

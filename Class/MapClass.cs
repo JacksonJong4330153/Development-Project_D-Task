@@ -21,7 +21,7 @@ namespace MyGame
 			//SwinGame.DrawRectangle (Color.Yellow, 415, 210, 100, 100);
 			//SwinGame.DrawRectangle (Color.Yellow, 415, 310, 100, 100);
 			//SwinGame.DrawRectangle (Color.Yellow, 415, 410, 100, 100);
-			SwinGame.DrawBitmap ("spacebattleship.png", 165, 180);
+			SwinGame.DrawBitmap ("spacebattleship.png", 165, 170);
 		}
 
 		public void startgame (string dtext)
