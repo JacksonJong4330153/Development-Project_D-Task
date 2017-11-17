@@ -204,7 +204,7 @@ namespace MyGame
 					boss.getBoss.GetX = -200;
 				}
 
-				if (p.getHealth == 0) {
+				if (p.getHealth == 0 || m.getEnd == true) {
 
 					SwinGame.PlaySoundEffect ("gameover.wav");
 
