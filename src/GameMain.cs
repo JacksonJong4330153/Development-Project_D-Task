@@ -56,8 +56,8 @@ namespace MyGame
 
 
 				SwinGame.DrawBitmap ("background.jpg", 0, 0);
-				SwinGame.DrawText ("Health: "+p.getHealth.ToString (), Color.PaleVioletRed, f, position);
-				SwinGame.DrawText ("Score: "+p.getScore.ToString (), Color.White, f, position2);
+				SwinGame.DrawText ("Health: " + p.getHealth.ToString (), Color.PaleVioletRed, f, position);
+				SwinGame.DrawText ("Score: " + p.getScore.ToString (), Color.White, f, position2);
 
 
 
@@ -158,7 +158,7 @@ namespace MyGame
 				if (co4 == true) {
 					if (getHitTimer != 0) {
 						getHitTimer = getHitTimer - 10;
-					}else if(getHitTimer == 0){
+					} else if (getHitTimer == 0) {
 						p.getHealth = p.getHealth - 1;
 						co4 = false;
 						getHitTimer = 200;
@@ -166,7 +166,7 @@ namespace MyGame
 				}
 
 
-				co5 = c.BulletAndMeteor1 (b, t,potato);
+				co5 = c.BulletAndMeteor1 (b, t, potato);
 				if (co5 == true) {
 					p.getScore = p.getScore + 10;
 					t.randomposition ();
@@ -174,8 +174,8 @@ namespace MyGame
 					co5 = false;
 				}
 
-				co6 = c.BulletAndMeteor2 (b, t,potato);
-				if (co6 == true){
+				co6 = c.BulletAndMeteor2 (b, t, potato);
+				if (co6 == true) {
 					p.getScore = p.getScore + 10;
 					t.randomposition2 ();
 					potato = false;
@@ -188,7 +188,7 @@ namespace MyGame
 						bosstimer = bosstimer - 10;
 						SwinGame.DrawText ("Enemy appear!!!!", Color.Red, SwinGame.LoadFont (SwinGame.PathToResource ("arial.ttf", ResourceKind.FontResource), 50), bosstextposition);
 					} else if (bosstimer == 0) {
-						
+
 						boss.getBoss.GetY = 0;
 						boss.draw ();
 						boss.checkTime ();
@@ -196,19 +196,28 @@ namespace MyGame
 					}
 				}
 
-				if (bosstimer == 0 && boss.getBossLife != 0) { 
-					SwinGame.DrawText ("BossHealth: "+boss.getBossLife.ToString (), Color.White, f, position3);
+				if (bosstimer == 0 && boss.getBossLife != 0) {
+					SwinGame.DrawText ("BossHealth: " + boss.getBossLife.ToString (), Color.White, f, position3);
 				}
 
 				if (boss.getBossLife == 0) {
 					boss.getBoss.GetX = -200;
-				} 
+				}
 
-				if (p.getHealth == 0 || m.getRestart == true) {
+				if (p.getHealth == 0) {
 
 					SwinGame.PlaySoundEffect ("gameover.wav");
 
 					m.gameover (p.getScore, ingameTimer.getTimer.ToString ());
+					ingameTimer.getX = 0;
+					ingameTimer.drawTimer ();
+					m.resetvalue (p, t, boss);
+					bosstimer = 2000;
+					boss = new Boss ();
+					m.getRestart = false;
+				}
+
+				if (m.getRestart == true) {
 					ingameTimer.getX = 0;
 					ingameTimer.drawTimer ();
 					m.resetvalue (p, t, boss);
