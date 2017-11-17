@@ -11,13 +11,10 @@
       <File FileName="Class\MapClass.cs" Line="1" Column="1" />
       <File FileName="Class\PlayerMovement.cs" Line="9" Column="15" />
       <File FileName="Class\Player.cs" Line="78" Column="4" />
-      <File FileName="Class\Trap.cs" Line="148" Column="25" />
-      <File FileName="Class\Boss.cs" Line="65" Column="3" />
-      <File FileName="Class\InGameTimer.cs" Line="1" Column="1" />
-      <File FileName="Class\Movement.cs" Line="1" Column="1" />
-      <File FileName="Class\Move.cs" Line="14" Column="19" />
-      <File FileName="Class\Bullet.cs" Line="19" Column="23" />
-      <File FileName="Class\Collision.cs" Line="1" Column="1" />
+      <File FileName="Class\Trap.cs" Line="1" Column="1" />
+      <File FileName="Class\UnitTest.cs" Line="1" Column="1" />
+      <File FileName="Class\Boss.cs" Line="1" Column="1" />
+      <File FileName="Class\Collision.cs" Line="62" Column="56" />
       <File FileName="Development-Project_D-Task Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>

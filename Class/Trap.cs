@@ -39,6 +39,11 @@ namespace MyGame
 			set { _meteorhp2 = value; }
 		}
 
+		public string getMeteorType {
+			get { return meteor1; }
+			set { meteor1 = value; }	
+		}
+
 		public TrapMovement getTrap {
 			get { return _trapmove; }
 			set { _trapmove = value; }

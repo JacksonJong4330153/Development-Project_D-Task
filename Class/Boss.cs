@@ -43,6 +43,7 @@ namespace MyGame
 
 		public bool _getfire {
 			get { return Isfire;}
+			set { Isfire = value; }
 		}
 
 

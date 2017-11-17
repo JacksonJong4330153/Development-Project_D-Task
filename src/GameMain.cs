@@ -23,7 +23,6 @@ namespace MyGame
 			b.getBullet.GetX = 0;
 			b.getBullet.GetY = 0;
 			Boss boss = new Boss ();
-			boss.getBossLife = 2;
 			Collision c = new Collision ();
 			InGameTimer ingameTimer = new InGameTimer ();
 

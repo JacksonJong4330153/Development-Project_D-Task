@@ -89,6 +89,7 @@
     <Compile Include="Class\Bullet.cs" />
     <Compile Include="Class\HighScore.cs" />
     <Compile Include="Class\InGameTimer.cs" />
+    <Compile Include="Class\4318501_unit_test.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SwinGame">
