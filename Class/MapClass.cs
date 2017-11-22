@@ -129,6 +129,7 @@ namespace MyGame
 
 				//Do function when clicked
 				if (SwinGame.MouseClicked (MouseButton.LeftButton) && SwinGame.PointInRect (SwinGame.MousePosition (), 141, 150, 500, 100)) {
+					drawStartInstruction ("ok");
 					break;
 				}
 				if (SwinGame.MouseClicked (MouseButton.LeftButton) && SwinGame.PointInRect (SwinGame.MousePosition (), 141, 250, 500, 100)) {
@@ -205,6 +206,18 @@ namespace MyGame
 			}
 		}
 
+		public void drawStartInstruction (string draw)
+		{
+			while (draw == "ok") {
+				SwinGame.ProcessEvents ();
+				SwinGame.DrawBitmap ("instruction.png", 0, 0);
+
+				SwinGame.RefreshScreen (60);
+				if ((SwinGame.AnyKeyPressed() || SwinGame.MouseClicked(MouseButton.LeftButton) || SwinGame.MouseClicked(MouseButton.RightButton))) {
+					break;
+				}
+			}
+		}
 
 		//public void resetvalue (Player p, Meteor t, Boss b)
 		//{

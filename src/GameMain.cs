@@ -44,6 +44,8 @@ namespace MyGame
 			MapClass m = new MapClass ();
 
 			m.startgame ("mainmenu");
+
+			//m.drawStartInstruction ("ok");
 			//Run the game loop
 			while (false == SwinGame.WindowCloseRequested ()) {
 				//Fetch the next batch of UI interaction
@@ -237,6 +239,7 @@ namespace MyGame
 
 
 					m.getRestart = false;
+					m.getEnd = false;
 				}
 
 				if (m.getRestart == true) {
