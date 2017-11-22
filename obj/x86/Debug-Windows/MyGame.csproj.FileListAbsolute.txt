@@ -271,7 +271,6 @@ C:\Users\Jackson\Development-Project_D-Task\bin\Debug\Resources\sounds\error.wav
 C:\Users\Jackson\Development-Project_D-Task\bin\Debug\Resources\sounds\SwinGameStart.wav
 C:\Users\Jackson\Development-Project_D-Task\bin\Debug\Resources\SwinGame.icns
 C:\Users\Jackson\Development-Project_D-Task\bin\Debug\Resources\SwinGame.ico
-C:\Users\Jackson\Development-Project_D-Task\bin\Debug\BACK.png
 C:\Users\Jackson\Development-Project_D-Task\bin\Debug\coin1.png
 C:\Users\Jackson\Development-Project_D-Task\bin\Debug\bomb.png
 C:\Users\Jackson\Development-Project_D-Task\bin\Debug\ship.png
@@ -376,7 +375,6 @@ C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\New Version\Development-Proje
 C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\New Version\Development-Project_D-Task\obj\x86\Debug-Windows\MyGame.exe
 C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\Resources\highscore.txt
 C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\Resources\fonts\Envy Code R.ttf
-C:\Users\Jackson\Development-Project_D-Task\bin\Debug\mainmenu.jpg
 C:\Users\Jackson\Development-Project_D-Task\bin\Debug\Resources\highscore.txt
 C:\Users\Jackson\Development-Project_D-Task\bin\Debug\Resources\fonts\Envy Code R.ttf
 C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bin\Debug\Resources\highscore.txt
@@ -463,3 +461,13 @@ C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\bulletright.png
 C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\instruction.png
 C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\Resources\fonts\moonhouse.ttf
 C:\Users\Dedrick\Development-Project_D-Task\bin\Debug\mainmenu.png
+C:\Users\Jackson\Development-Project_D-Task\bin\Debug\background.jpg
+C:\Users\Jackson\Development-Project_D-Task\bin\Debug\spacebattleship.png
+C:\Users\Jackson\Development-Project_D-Task\bin\Debug\cannon.png
+C:\Users\Jackson\Development-Project_D-Task\bin\Debug\cannonbottom.png
+C:\Users\Jackson\Development-Project_D-Task\bin\Debug\cannonleft.png
+C:\Users\Jackson\Development-Project_D-Task\bin\Debug\cannonright.png
+C:\Users\Jackson\Development-Project_D-Task\bin\Debug\bulletleft.png
+C:\Users\Jackson\Development-Project_D-Task\bin\Debug\bulletright.png
+C:\Users\Jackson\Development-Project_D-Task\bin\Debug\Resources\fonts\moonhouse.ttf
+C:\Users\Jackson\Development-Project_D-Task\bin\Debug\mainmenu.png

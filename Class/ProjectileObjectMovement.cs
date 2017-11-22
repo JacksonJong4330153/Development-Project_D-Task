@@ -1,11 +1,11 @@
 ﻿using System;
 namespace MyGame
 {
-	public class TrapMovement : Move
+	public class ProjectileObjectMovement : Move
 	{
 		private int _speed;
 
-		public TrapMovement ()
+		public ProjectileObjectMovement ()
 		{
 			_speed = 5;
 		}

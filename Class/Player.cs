@@ -75,7 +75,6 @@ namespace MyGame
 
 		public void fire ()
 		{
-			
 			_getBullet.Moving (getFaceDirection);
 		}
 

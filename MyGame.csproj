@@ -78,8 +78,8 @@
     <Compile Include="Class\Move.cs" />
     <Compile Include="Class\PlayerMovement.cs" />
     <Compile Include="Class\Player.cs" />
-    <Compile Include="Class\TrapMovement.cs" />
-    <Compile Include="Class\Trap.cs" />
+    <Compile Include="Class\ProjectileObjectMovement.cs" />
+    <Compile Include="Class\Meteor.cs" />
     <Compile Include="Class\Item.cs" />
     <Compile Include="Class\ItemType.cs" />
     <Compile Include="Class\Collision.cs" />
@@ -90,6 +90,7 @@
     <Compile Include="Class\HighScore.cs" />
     <Compile Include="Class\InGameTimer.cs" />
     <Compile Include="Class\4318501_unit_test.cs" />
+    <Compile Include="Class\4330153_UnitTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SwinGame">
