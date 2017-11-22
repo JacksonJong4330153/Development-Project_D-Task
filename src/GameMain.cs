@@ -141,6 +141,14 @@ namespace MyGame
 					t.randomposition ();
 				}
 
+				co = c.CheckCollideTrap2 (p, t);
+				if (co == true) {
+					p.getHealth = p.getHealth - 1;
+					co = false;
+					SwinGame.PlaySoundEffect ("explode.wav");
+					t.randomposition2 ();
+				}
+
 				co = c.BulletAndBoss (boss, b);
 				if (co == true) {
 					boss.getBossLife = boss.getBossLife - 1;
@@ -148,14 +156,6 @@ namespace MyGame
 					boss.checkTime ();
 					SwinGame.PlaySoundEffect ("explode.wav");
 					co = false;
-				}
-
-				co = c.CheckCollideTrap2 (p, t);
-				if (co == true) {
-					p.getHealth = p.getHealth - 1;
-					co = false;
-					SwinGame.PlaySoundEffect ("explode.wav");
-					t.randomposition2 ();
 				}
 
 				co = c.LaserAndPlayer (p, boss);
@@ -227,18 +227,29 @@ namespace MyGame
 					m.gameover (p.getScore, ingameTimer.getTimer.ToString ());
 					ingameTimer.getX = 0;
 					ingameTimer.drawTimer ();
-					m.resetvalue (p, t, boss);
-					bosstimer = 2000;
+					p = new Player ();
+					t = new Meteor ();
 					boss = new Boss ();
+					i = new Item ();
+					i.checktime ();
+					bosstimer = 2000;
+					//boss = new Boss ();
+
+
 					m.getRestart = false;
 				}
 
 				if (m.getRestart == true) {
 					ingameTimer.getX = 0;
 					ingameTimer.drawTimer ();
-					m.resetvalue (p, t, boss);
+
 					bosstimer = 2000;
+
+					p = new Player ();
+					t = new Meteor ();
 					boss = new Boss ();
+					i = new Item ();
+					i.checktime ();
 					m.getRestart = false;
 				}
 

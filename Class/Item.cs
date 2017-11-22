@@ -16,7 +16,6 @@ namespace MyGame
 
 		public Item ()
 		{
-			_item = new ItemType ();
 			_time = 5000;
 			randomposition ();
 		}

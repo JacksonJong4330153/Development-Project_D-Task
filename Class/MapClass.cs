@@ -206,16 +206,16 @@ namespace MyGame
 		}
 
 
-		public void resetvalue (Player p, Meteor t, Boss b)
-		{
-			p.getHealth = 5;
-			p.getScore = 0;
-			p.getMove.GetX = 325;
-			p.getMove.GetY = 325;
-			t.getMove1.getSpeed = 5;
-			t.getMove2.getSpeed = 5;
-			t.randomposition ();
-			t.randomposition2 ();
-		}
+		//public void resetvalue (Player p, Meteor t, Boss b)
+		//{
+		//	p.getHealth = 5;
+		//	p.getScore = 0;
+		//	p.getMove.GetX = 325;
+		//	p.getMove.GetY = 325;
+		//	t.getMove1.getSpeed = 5;
+		//	t.getMove2.getSpeed = 5;
+		//	t.randomposition ();
+		//	t.randomposition2 ();
+		//}
 	}
 }
