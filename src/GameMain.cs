@@ -17,21 +17,21 @@ namespace MyGame
 
 
 			Player p = new Player ();
-
-			Trap t = new Trap ();
+			Item i = new Item ();
+			Meteor t = new Meteor ();
 			Bullet b = new Bullet ();
-			b.getBullet.GetX = 0;
-			b.getBullet.GetY = 0;
 			Boss boss = new Boss ();
 			Collision c = new Collision ();
+
+
 			InGameTimer ingameTimer = new InGameTimer ();
 
 			int bosstimer = 2000;
 			int getHitTimer = 200;
-			bool potato = false;
+			bool firetrigger = false;
 			Movement direction = Movement.Top;
 
-			bool co, co2, co3,co4,co5,co6;
+			bool co;
 			Font f = SwinGame.LoadFont (SwinGame.PathToResource ("arial.ttf", ResourceKind.FontResource), 25);
 			Point2D position, position2,position3;
 
@@ -58,11 +58,16 @@ namespace MyGame
 				SwinGame.DrawText ("Health: " + p.getHealth.ToString (), Color.PaleVioletRed, f, position);
 				SwinGame.DrawText ("Score: " + p.getScore.ToString (), Color.White, f, position2);
 
+				while (p.getMove.GetX == i.getXposition && p.getMove.GetY == i.getYposition) {
+					i.randomposition ();
+				}
 
+				i.checktime ();
 
 				m.draw ();
 				p.Draw ();
 				t.draw ();
+				i.draw ();
 
 				ingameTimer.drawTimer ();
 
@@ -83,7 +88,7 @@ namespace MyGame
 					p.go (Movement.Bottom);
 				}
 
-				while (potato == false) {
+				while (firetrigger == false) {
 					b.getBullet.GetX = p.getMove.GetX;
 					b.getBullet.GetY = p.getMove.GetY;
 					break;
@@ -103,86 +108,98 @@ namespace MyGame
 					direction = Movement.Right;
 				}
 
-				while (potato == false) {
+				while (firetrigger == false) {
 					b.facedirection (direction);
 					break;
 				}
 
 				if (SwinGame.KeyTyped (KeyCode.vk_SPACE)) {
-					potato = true;
+					firetrigger = true;
 				}
 
-				if (potato == true) {
+				if (firetrigger == true) {
 
 					b.fire ();
 
 					if (b.getFaceDirection == Movement.Left && b.getBullet.GetX < -10) {
-						potato = false;
+						firetrigger = false;
 					} else if (b.getFaceDirection == Movement.Right && b.getBullet.GetX > 990) {
-						potato = false;
+						firetrigger = false;
 					} else if (b.getFaceDirection == Movement.Top && b.getBullet.GetY < -10) {
-						potato = false;
+						firetrigger = false;
 					} else if (b.getFaceDirection == Movement.Bottom && b.getBullet.GetY > 700) {
-						potato = false;
+						firetrigger = false;
 					}
 
 				}
 
 				co = c.CheckCollideTrap1 (p, t);
 				if (co == true) {
-					p.getHealth = c.AfterCollideTrap (p.getHealth);
+					p.getHealth = p.getHealth - 1;
 					co = false;
-					t.randomposition ();
 					SwinGame.PlaySoundEffect ("explode.wav");
+					t.randomposition ();
 				}
 
-				co2 = c.BulletAndBoss (boss, b);
-				if (co2 == true) {
+				co = c.BulletAndBoss (boss, b);
+				if (co == true) {
 					boss.getBossLife = boss.getBossLife - 1;
 					p.getScore = p.getScore + 10;
 					boss.checkTime ();
 					SwinGame.PlaySoundEffect ("explode.wav");
-					co2 = false;
+					co = false;
 				}
 
-				co3 = c.CheckCollideTrap2 (p, t);
-				if (co3 == true) {
-					p.getHealth = c.AfterCollideTrap (p.getHealth);
-					co3 = false;
-					t.randomposition2 ();
+				co = c.CheckCollideTrap2 (p, t);
+				if (co == true) {
+					p.getHealth = p.getHealth - 1;
+					co = false;
 					SwinGame.PlaySoundEffect ("explode.wav");
+					t.randomposition2 ();
 				}
 
-				co4 = c.LaserAndPlayer (p, boss);
-				if (co4 == true) {
+				co = c.LaserAndPlayer (p, boss);
+				if (co == true) {
 					if (getHitTimer != 0) {
 						getHitTimer = getHitTimer - 10;
 					} else if (getHitTimer == 0) {
 						p.getHealth = p.getHealth - 1;
-						co4 = false;
+						co = false;
 						getHitTimer = 200;
+						SwinGame.PlaySoundEffect ("explode.wav");
 					}
 				}
 
 
-				co5 = c.BulletAndMeteor1 (b, t, potato);
-				if (co5 == true) {
+				co = c.BulletAndMeteor1 (b, t, firetrigger);
+				if (co == true) {
 					p.getScore = p.getScore + 10;
 					t.randomposition ();
-					potato = false;
-					co5 = false;
+					firetrigger = false;
+					co = false;
+					SwinGame.PlaySoundEffect ("coin.wav");
 				}
 
-				co6 = c.BulletAndMeteor2 (b, t, potato);
-				if (co6 == true) {
+				co = c.BulletAndMeteor2 (b, t, firetrigger);
+				if (co == true) {
 					p.getScore = p.getScore + 10;
 					t.randomposition2 ();
-					potato = false;
-					co6 = false;
+					firetrigger = false;
+					co = false;
+					SwinGame.PlaySoundEffect ("coin.wav");
+				}
+
+				co = c.CheckCollideItem (p, i);
+				if (co == true) {
+					p.getHealth = p.getHealth + 1;
+					i.getXposition = -100;
+					i.getYposition = -100;
+					SwinGame.PlaySoundEffect ("recover.wav");
+					co = false;
 				}
 
 
-				if (p.getScore > 0) {
+				if (p.getScore > 50) {
 					if (bosstimer != 0) {
 						bosstimer = bosstimer - 10;
 						SwinGame.DrawText ("Enemy appear!!!!", Color.Red, SwinGame.LoadFont (SwinGame.PathToResource ("arial.ttf", ResourceKind.FontResource), 50), bosstextposition);
@@ -200,7 +217,7 @@ namespace MyGame
 				}
 
 				if (boss.getBossLife == 0) {
-					boss.getBoss.GetX = -200;
+					boss = new Boss ();
 				}
 
 				if (p.getHealth == 0 || m.getEnd == true) {

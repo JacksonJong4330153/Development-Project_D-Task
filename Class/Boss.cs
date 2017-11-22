@@ -5,8 +5,7 @@ namespace MyGame
 {
 	public class Boss
 	{
-		private TrapMovement _boss;
-		private Player p;
+		private ProjectileObjectMovement _boss;
 
 		private int _time;
 		private int _bosshp;
@@ -25,13 +24,13 @@ namespace MyGame
 
 		public Boss ()
 		{
-			_boss = new TrapMovement ();
+			_boss = new ProjectileObjectMovement ();
 			_boss.GetX = 325+100;
 			_boss.GetY = -100;
-			_bosshp = 20;
+			_bosshp = 5;
 			Isfire = false;
 		}
-		public TrapMovement getBoss {
+		public ProjectileObjectMovement getBoss {
 			get { return _boss; }
 			set { this._boss = value; }
 		}

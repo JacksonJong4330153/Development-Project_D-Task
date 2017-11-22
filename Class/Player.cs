@@ -10,7 +10,7 @@ namespace MyGame
 
 		private Movement _facedirection;
 		private PlayerMovement _pmove;
-		private TrapMovement _bullet;
+		private ProjectileObjectMovement _bullet;
 
 		public Player ()
 		{
@@ -18,11 +18,11 @@ namespace MyGame
 			_health = 5;
 			_score = 0;
 
-			_bullet = new TrapMovement ();
+			_bullet = new ProjectileObjectMovement ();
 			_facedirection = Movement.Top;
 		}
 
-		public TrapMovement _getBullet {
+		public ProjectileObjectMovement _getBullet {
 			get { return _bullet; }
 			set { _bullet = value; }
 		}

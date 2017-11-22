@@ -10,10 +10,10 @@ namespace MyGame
 		[Test()]
 		public void MeteorRandomPosition()
 		{
-			Trap t = new Trap ();
+			Meteor t = new Meteor ();
 			t.randomposition ();
 
-			Assert.AreEqual (325, t.getTrap.GetX);
+			Assert.AreEqual (325, t.getMove1.GetX);
 		}
 
 		[Test ()]

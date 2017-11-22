@@ -7,7 +7,7 @@ namespace MyGame
 	public class Meteor
 	{
 
-		private ProjectileObjectMovement _trapmove, _trapmove2;
+		private ProjectileObjectMovement _objectmove1, _objectmove2;
 		Random random_generator = new Random ();
 		List<int> PostitionX = new List<int> { 225+100, 325+100, 425+100 };
 		List<int> PostitionY = new List<int> { 225, 325, 425 };
@@ -15,17 +15,14 @@ namespace MyGame
 		String meteor1;
 		String meteor2;
 
-		private int _meteorhp;
-		private int _meteorhp2;
-
 		List<Movement> testmove = new List<Movement> { Movement.Top, Movement.Bottom, Movement.Left, Movement.Right };
 		private Movement _getmove;
 		private Movement _getmove2;
 
 		public Meteor ()
 		{
-			_trapmove = new ProjectileObjectMovement ();
-			_trapmove2 = new ProjectileObjectMovement ();
+			_objectmove1 = new ProjectileObjectMovement ();
+			_objectmove2 = new ProjectileObjectMovement ();
 		}
 
 		public string getMeteorType {
@@ -34,13 +31,13 @@ namespace MyGame
 		}
 
 		public ProjectileObjectMovement getMove1 {
-			get { return _trapmove; }
-			set { _trapmove = value; }
+			get { return _objectmove1; }
+			set { _objectmove1 = value; }
 		}
 
 		public ProjectileObjectMovement getMove2 {
-			get { return _trapmove2; }
-			set { _trapmove2 = value; }
+			get { return _objectmove2; }
+			set { _objectmove2 = value; }
 		}
 
 		public void checkMeteorType ()

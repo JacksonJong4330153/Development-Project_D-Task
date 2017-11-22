@@ -7,16 +7,16 @@ namespace MyGame
 	public class Bullet
 	{
 
-		private TrapMovement _bullet;
+		private ProjectileObjectMovement _bullet;
 		private Movement _facedirection;
 
 		public Bullet ()
 		{
-			_bullet = new TrapMovement ();
+			_bullet = new ProjectileObjectMovement ();
 			_facedirection = Movement.Top;
 		}
 
-		public TrapMovement getBullet {
+		public ProjectileObjectMovement getBullet {
 			get { return _bullet; }
 			set { _bullet = value; }
 		}

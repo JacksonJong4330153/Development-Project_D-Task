@@ -8,21 +8,18 @@ namespace MyGame
 		[Test ()]
 		public void MeteorSpawnTest ()
 		{
-			String meteor1 = "";
-			Trap t = new Trap ();
+			Meteor t = new Meteor ();
 
 			t.randomposition ();
 
-			meteor1 = t.getMeteorType;
-
-			Assert.AreEqual ("meteorSmall.png", meteor1);
+			Assert.AreEqual ("meteorSmall.png", t.getMeteorType);
 		}
 
 		[Test ()]
 		public void MeteorSpeedTest ()
 		{
 			int chkspeed = 0;
-			Trap t = new Trap ();
+			Meteor t = new Meteor ();
 
 			t.randomposition ();
 
@@ -30,7 +27,7 @@ namespace MyGame
 
 			t.checkMeteorType ();
 
-			chkspeed = t.getTrap.getSpeed;
+			chkspeed = t.getMove1.getSpeed;
 
 			Assert.AreEqual (150, chkspeed);
 		}

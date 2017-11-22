@@ -5,20 +5,26 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Class\Meteor.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Class\Item.cs">
     <Files>
-      <File FileName="src\GameMain.cs" Line="1" Column="1" />
-      <File FileName="Class\MapClass.cs" Line="1" Column="1" />
+      <File FileName="src\GameMain.cs" Line="241" Column="25" />
+      <File FileName="Class\MapClass.cs" Line="222" Column="1" />
       <File FileName="Class\PlayerMovement.cs" Line="8" Column="4" />
-      <File FileName="Class\Player.cs" Line="72" Column="9" />
-      <File FileName="Class\Meteor.cs" Line="29" Column="4" />
+      <File FileName="Class\Player.cs" Line="26" Column="27" />
+      <File FileName="Class\Meteor.cs" Line="70" Column="5" />
       <File FileName="Class\UnitTest.cs" Line="23" Column="31" />
-      <File FileName="Class\Boss.cs" Line="1" Column="1" />
-      <File FileName="Class\Collision.cs" Line="62" Column="56" />
-      <File FileName="Class\4330153_UnitTest.cs" Line="16" Column="42" />
-      <File FileName="Class\4318501_unit_test.cs" Line="19" Column="4" />
+      <File FileName="Class\Boss.cs" Line="28" Column="25" />
+      <File FileName="Class\Collision.cs" Line="31" Column="27" />
       <File FileName="Class\ProjectileObjectMovement.cs" Line="12" Column="3" />
+      <File FileName="Class\Item.cs" Line="54" Column="3" />
     </Files>
+    <Pads>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="MyGame" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
 </Properties>

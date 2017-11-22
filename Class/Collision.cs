@@ -3,19 +3,14 @@ namespace MyGame
 {
 	public class Collision
 	{
-		public bool co, co2;
-
-
-
-
 		public Collision ()
 		{
 
 		}
 
-		public Boolean CheckCollideTrap1 (Player p, Trap t)
+		public Boolean CheckCollideTrap1 (Player p, Meteor t)
 		{
-			if ((p.getMove.GetX > (t.getTrap.GetX - 10) && p.getMove.GetX < (t.getTrap.GetX + 10)) && (p.getMove.GetY > (t.getTrap.GetY - 10) && p.getMove.GetY < (t.getTrap.GetY + 10))) {
+			if ((p.getMove.GetX > (t.getMove1.GetX - 10) && p.getMove.GetX < (t.getMove1.GetX + 10)) && (p.getMove.GetY > (t.getMove1.GetY - 10) && p.getMove.GetY < (t.getMove1.GetY + 10))) {
 				return true;
 			} else {
 				return false;
@@ -23,20 +18,14 @@ namespace MyGame
 
 		}
 
-		public Boolean CheckCollideTrap2 (Player p, Trap t)
+		public Boolean CheckCollideTrap2 (Player p, Meteor t)
 		{
-			if ((p.getMove.GetX > (t.getTrap2.GetX - 10) && p.getMove.GetX < (t.getTrap2.GetX + 10)) && (p.getMove.GetY > (t.getTrap2.GetY - 10) && p.getMove.GetY < (t.getTrap2.GetY + 10))) {
+			if ((p.getMove.GetX > (t.getMove2.GetX - 10) && p.getMove.GetX < (t.getMove2.GetX + 10)) && (p.getMove.GetY > (t.getMove2.GetY - 10) && p.getMove.GetY < (t.getMove2.GetY + 10))) {
 				return true;
 			} else {
 				return false;
 			}
 
-		}
-
-		public int AfterCollideTrap (int hp)
-		{
-			hp = hp - 1;
-			return hp;
 		}
 
 		public Boolean CheckCollideItem (Player p, Item i)
@@ -67,65 +56,27 @@ namespace MyGame
 		}
 
 
-		public Boolean BulletAndMeteor1 (Bullet b, Trap t, bool p)
+		public Boolean BulletAndMeteor1 (Bullet b, Meteor t, bool p)
 		{
-			if ((b.getBullet.GetX > t.getTrap.GetX - 50) && (b.getBullet.GetX < t.getTrap.GetX + 50)
-			    && (b.getBullet.GetY > t.getTrap.GetY - 50) && (b.getBullet.GetY < t.getTrap.GetY + 50)
+			if ((b.getBullet.GetX > t.getMove1.GetX - 50) && (b.getBullet.GetX < t.getMove1.GetX + 50)
+			    && (b.getBullet.GetY > t.getMove1.GetY - 50) && (b.getBullet.GetY < t.getMove1.GetY + 50)
 			    && (p != false)) {
 				return true;
 			} else {
 				return false;
 			}
-			//if ((b.getBullet.GetX == t.getTrap.GetX && b.getBullet.GetY == t.getTrap.GetY) && b.getBullet.GetX != p.getMove.GetX) {
-			//	return true;
-			//} else {
-			//	return false;
-			//}
-
 		}
 
-		public Boolean BulletAndMeteor2 (Bullet b, Trap t, bool p)
+		public Boolean BulletAndMeteor2 (Bullet b, Meteor t, bool p)
 		{
-			if ((b.getBullet.GetX > t.getTrap2.GetX - 50) && (b.getBullet.GetX < t.getTrap2.GetX + 50)
-				&& (b.getBullet.GetY > t.getTrap2.GetY - 50) && (b.getBullet.GetY < t.getTrap2.GetY + 50)
+			if ((b.getBullet.GetX > t.getMove2.GetX - 50) && (b.getBullet.GetX < t.getMove2.GetX + 50)
+				&& (b.getBullet.GetY > t.getMove2.GetY - 50) && (b.getBullet.GetY < t.getMove2.GetY + 50)
 			    && (p != false)) {
 				return true;
 			} else {
 				return false;
 			}
-			//if ((b.getBullet.GetX == t.getTrap.GetX && b.getBullet.GetY == t.getTrap.GetY) && b.getBullet.GetX != p.getMove.GetX) {
-			//	return true;
-			//} else {
-			//	return false;
-			//}
 		}
-
-		//public int AfterCollideItemAffectHp (int hp, ItemType type)
-		//{
-		//	if (hp < 5 && type == ItemType.health) {
-		//		hp = hp + 1;
-		//		return hp;
-		//	} else if (type == ItemType.bomb) {
-		//		hp = hp - 1;
-		//		return hp;
-		//	} else {
-		//		return hp;
-		//	}
-
-		//}
-
-		//public int AfterCollideItemAffectScore (int hp,int score)
-		//{
-		//	if (hp> 4) {
-		//		score = score + 100;
-		//		return score;
-		//	} else{
-		//		score = score + 100;
-		//		return score;
-		//	}
-
-		//}
-
 
 	}
 }
