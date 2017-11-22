@@ -128,7 +128,7 @@ namespace MyGame
 
 			if (_getmove == Movement.Left && getMove1.GetX < -10) {
 				randomposition ();
-			} else if (_getmove == Movement.Right && getMove1.GetX > 700) {
+			} else if (_getmove == Movement.Right && getMove1.GetX > 700+300) {
 				randomposition ();
 			} else if (_getmove == Movement.Top && getMove1.GetY < -10) {
 				randomposition ();
@@ -138,7 +138,7 @@ namespace MyGame
 
 			if (_getmove2 == Movement.Left && getMove2.GetX < -10) {
 				randomposition2 ();
-			} else if (_getmove2 == Movement.Right && getMove2.GetX > 700) {
+			} else if (_getmove2 == Movement.Right && getMove2.GetX > 700+300) {
 				randomposition2 ();
 			} else if (_getmove2 == Movement.Top && getMove2.GetY < -10) {
 				randomposition2 ();

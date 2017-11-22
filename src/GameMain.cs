@@ -32,12 +32,12 @@ namespace MyGame
 			Movement direction = Movement.Top;
 
 			bool co;
-			Font f = SwinGame.LoadFont (SwinGame.PathToResource ("arial.ttf", ResourceKind.FontResource), 25);
+			Font f = SwinGame.LoadFont (SwinGame.PathToResource ("arial.ttf", ResourceKind.FontResource), 30);
 			Point2D position, position2,position3;
 
-			position = SwinGame.PointAt (225, 570);
-			position2 = SwinGame.PointAt (425, 570);
-			position3 = SwinGame.PointAt (625, 50);
+			position = SwinGame.PointAt (840, 10);
+			position2 = SwinGame.PointAt (840, 50);
+			position3 = SwinGame.PointAt (100, 50);
 
 			Point2D bosstextposition = SwinGame.PointAt (325, 325);
 
@@ -57,8 +57,9 @@ namespace MyGame
 
 
 				SwinGame.DrawBitmap ("background.jpg", 0, 0);
-				SwinGame.DrawText ("Health: " + p.getHealth.ToString (), Color.PaleVioletRed, f, position);
-				SwinGame.DrawText ("Score: " + p.getScore.ToString (), Color.White, f, position2);
+				SwinGame.FillRectangle (Color.AliceBlue, 800, 0, 200, 150);
+				SwinGame.DrawText ("Health: " + p.getHealth.ToString (), Color.Red, f, position);
+				SwinGame.DrawText ("Score: " + p.getScore.ToString (), Color.Purple, f, position2);
 
 				while (p.getMove.GetX == i.getXposition && p.getMove.GetY == i.getYposition) {
 					i.randomposition ();

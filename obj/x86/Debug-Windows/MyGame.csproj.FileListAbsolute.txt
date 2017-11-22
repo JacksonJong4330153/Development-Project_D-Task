@@ -221,7 +221,6 @@ C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bi
 C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bin\Debug\Resources\sounds\SwinGameStart.wav
 C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bin\Debug\Resources\SwinGame.icns
 C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bin\Debug\Resources\SwinGame.ico
-C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bin\Debug\BACK.png
 C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bin\Debug\coin1.png
 C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bin\Debug\bomb.png
 C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bin\Debug\ship.png
@@ -379,7 +378,6 @@ C:\Users\Jackson\Development-Project_D-Task\bin\Debug\Resources\highscore.txt
 C:\Users\Jackson\Development-Project_D-Task\bin\Debug\Resources\fonts\Envy Code R.ttf
 C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bin\Debug\Resources\highscore.txt
 C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bin\Debug\Resources\fonts\Envy Code R.ttf
-C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bin\Debug\mainmenu.jpg
 C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bin\Debug\spacebattleship.png
 C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bin\Debug\cannon.png
 C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bin\Debug\cannonbottom.png
@@ -471,3 +469,8 @@ C:\Users\Jackson\Development-Project_D-Task\bin\Debug\bulletleft.png
 C:\Users\Jackson\Development-Project_D-Task\bin\Debug\bulletright.png
 C:\Users\Jackson\Development-Project_D-Task\bin\Debug\Resources\fonts\moonhouse.ttf
 C:\Users\Jackson\Development-Project_D-Task\bin\Debug\mainmenu.png
+C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bin\Debug\background.jpg
+C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bin\Debug\Resources\fonts\moonhouse.ttf
+C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bin\Debug\bulletleft.png
+C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bin\Debug\bulletright.png
+C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bin\Debug\mainmenu.png
