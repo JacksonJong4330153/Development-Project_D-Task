@@ -10,7 +10,8 @@ namespace MyGame
 
 		public Boolean CheckCollideTrap1 (Player p, Meteor t)
 		{
-			if ((p.getMove.GetX > (t.getMove1.GetX - 10) && p.getMove.GetX < (t.getMove1.GetX + 10)) && (p.getMove.GetY > (t.getMove1.GetY - 10) && p.getMove.GetY < (t.getMove1.GetY + 10))) {
+			if ((p.getMove.GetX > (t.getMove1.GetX - 10) && p.getMove.GetX < (t.getMove1.GetX + 10)) 
+			    && (p.getMove.GetY > (t.getMove1.GetY - 10) && p.getMove.GetY < (t.getMove1.GetY + 10))) {
 				return true;
 			} else {
 				return false;
@@ -20,7 +21,8 @@ namespace MyGame
 
 		public Boolean CheckCollideTrap2 (Player p, Meteor t)
 		{
-			if ((p.getMove.GetX > (t.getMove2.GetX - 10) && p.getMove.GetX < (t.getMove2.GetX + 10)) && (p.getMove.GetY > (t.getMove2.GetY - 10) && p.getMove.GetY < (t.getMove2.GetY + 10))) {
+			if ((p.getMove.GetX > (t.getMove2.GetX - 10) && p.getMove.GetX < (t.getMove2.GetX + 10)) 
+			    && (p.getMove.GetY > (t.getMove2.GetY - 10) && p.getMove.GetY < (t.getMove2.GetY + 10))) {
 				return true;
 			} else {
 				return false;
@@ -30,7 +32,8 @@ namespace MyGame
 
 		public Boolean CheckCollideItem (Player p, Item i)
 		{
-			if ((p.getMove.GetX > (i.getXposition - 10) && p.getMove.GetX < (i.getXposition + 10)) && (p.getMove.GetY > (i.getYposition - 10) && p.getMove.GetY < (i.getYposition + 10))) {
+			if ((p.getMove.GetX > (i.getXposition - 10) && p.getMove.GetX < (i.getXposition + 10)) 
+			    && (p.getMove.GetY > (i.getYposition - 10) && p.getMove.GetY < (i.getYposition + 10))) {
 				return true;
 			} else {
 				return false;
