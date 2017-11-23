@@ -27,7 +27,7 @@ namespace MyGame
 			_boss = new ProjectileObjectMovement ();
 			_boss.GetX = 325+100;
 			_boss.GetY = -100;
-			_bosshp = 5;
+			_bosshp = 20;
 			Isfire = false;
 		}
 		public ProjectileObjectMovement getBoss {

@@ -220,7 +220,9 @@ namespace MyGame
 				}
 
 				if (boss.getBossLife == 0) {
-					boss = new Boss ();
+					boss.getBoss.GetY = -300;
+					boss.getBoss.GetX = -300;
+					p.getScore = p.getScore + 200;
 				}
 
 				if (p.getHealth == 0 || m.getEnd == true) {
