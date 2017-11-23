@@ -89,6 +89,7 @@
     <Compile Include="Class\InGameTimer.cs" />
     <Compile Include="Class\4318501_unit_test.cs" />
     <Compile Include="Class\4330153_UnitTest.cs" />
+    <Compile Include="Class\UnitTest%28100081416%29.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SwinGame">
