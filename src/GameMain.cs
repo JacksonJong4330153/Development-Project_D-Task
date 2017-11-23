@@ -33,6 +33,7 @@ namespace MyGame
 
 			bool co;
 			Font f = SwinGame.LoadFont (SwinGame.PathToResource ("arial.ttf", ResourceKind.FontResource), 30);
+			Font boardf = SwinGame.LoadFont (SwinGame.PathToResource ("fff.ttf", ResourceKind.FontResource), 20);
 			Point2D position, position2,position3;
 
 			position = SwinGame.PointAt (840, 10);
@@ -57,9 +58,10 @@ namespace MyGame
 
 
 				SwinGame.DrawBitmap ("background.jpg", 0, 0);
-				SwinGame.FillRectangle (Color.AliceBlue, 800, 0, 200, 150);
-				SwinGame.DrawText ("Health: " + p.getHealth.ToString (), Color.Red, f, position);
-				SwinGame.DrawText ("Score: " + p.getScore.ToString (), Color.Purple, f, position2);
+				SwinGame.DrawRectangle(Color.DodgerBlue, 800, 0, 200, 140);
+
+				SwinGame.DrawText ("Health: " + p.getHealth.ToString (), Color.Red, boardf, position);
+				SwinGame.DrawText ("Score: " + p.getScore.ToString (), Color.Yellow, boardf, position2);
 
 				while (p.getMove.GetX == i.getXposition && p.getMove.GetY == i.getYposition) {
 					i.randomposition ();
@@ -205,7 +207,7 @@ namespace MyGame
 				if (p.getScore > 50) {
 					if (bosstimer != 0) {
 						bosstimer = bosstimer - 10;
-						SwinGame.DrawText ("Enemy appear!!!!", Color.Red, SwinGame.LoadFont (SwinGame.PathToResource ("arial.ttf", ResourceKind.FontResource), 50), bosstextposition);
+						SwinGame.DrawText ("Enemy appear!!!!", Color.Red, SwinGame.LoadFont (SwinGame.PathToResource ("fff.ttf", ResourceKind.FontResource), 30), bosstextposition);
 					} else if (bosstimer == 0) {
 
 						boss.getBoss.GetY = 0;
@@ -216,7 +218,7 @@ namespace MyGame
 				}
 
 				if (bosstimer == 0 && boss.getBossLife != 0) {
-					SwinGame.DrawText ("BossHealth: " + boss.getBossLife.ToString (), Color.White, f, position3);
+					SwinGame.DrawText ("BossHealth: " + boss.getBossLife.ToString (), Color.IndianRed, boardf, position3);
 				}
 
 				if (boss.getBossLife == 0) {

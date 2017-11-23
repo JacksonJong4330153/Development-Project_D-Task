@@ -36,7 +36,9 @@ namespace MyGame
 				SwinGame.DrawBitmap ("bulletleft.png", getBullet.GetX, getBullet.GetY);
 			} else if (getFaceDirection == Movement.Right) {
 				SwinGame.DrawBitmap ("bulletright.png", getBullet.GetX, getBullet.GetY);
-			} else { 
+			} else if (getFaceDirection == Movement.Bottom) { 
+				SwinGame.DrawBitmap ("bulletbottom.png", getBullet.GetX, getBullet.GetY);
+			} else {
 				SwinGame.DrawBitmap ("bullet.png", getBullet.GetX, getBullet.GetY);
 			}
 			getBullet.Moving (_facedirection);

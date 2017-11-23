@@ -163,9 +163,9 @@ namespace MyGame
 			while (game_over == false) {
 				SwinGame.ProcessEvents ();
 				SwinGame.DrawBitmap ("End.png", -100, 0);
-				SwinGame.DrawText ("Score: " + score.ToString (), Color.White, SwinGame.LoadFont (SwinGame.PathToResource ("arial.ttf", ResourceKind.FontResource), 40), 420, 330);
-				SwinGame.DrawText ("Time: " + timer, Color.White, SwinGame.LoadFont (SwinGame.PathToResource ("arial.ttf", ResourceKind.FontResource), 40), 420, 370);
-				SwinGame.DrawText ("Press space to exit", Color.Red, SwinGame.LoadFont (SwinGame.PathToResource ("arial.ttf", ResourceKind.FontResource), 30), 370, 500);
+				SwinGame.DrawText ("Score: " + score.ToString (), Color.White, SwinGame.LoadFont (SwinGame.PathToResource ("fff.ttf", ResourceKind.FontResource), 30), 410, 330);
+				SwinGame.DrawText ("Time: " + timer, Color.MediumSeaGreen, SwinGame.LoadFont (SwinGame.PathToResource ("fff.ttf", ResourceKind.FontResource), 30), 420, 370);
+				SwinGame.DrawText ("Press space to exit", Color.Red, SwinGame.LoadFont (SwinGame.PathToResource ("fff.ttf", ResourceKind.FontResource), 20), 370, 500);
 
 				if (SwinGame.KeyTyped (KeyCode.vk_SPACE)) {
 					game_over = true;

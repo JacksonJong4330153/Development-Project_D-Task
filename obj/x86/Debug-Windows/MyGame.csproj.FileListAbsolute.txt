@@ -474,3 +474,6 @@ C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bi
 C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bin\Debug\bulletleft.png
 C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bin\Debug\bulletright.png
 C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bin\Debug\mainmenu.png
+C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bin\Debug\Resources\fonts\digital-7.ttf
+C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bin\Debug\Resources\fonts\fff.ttf
+C:\Users\lazyyang\Desktop\DP1\DP1-DistinctionTasks\Development-Project_D-Task\bin\Debug\bulletbottom.png

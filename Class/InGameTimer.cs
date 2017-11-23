@@ -30,7 +30,7 @@ namespace MyGame
 				x++;
 			}
 			_time = SwinGame.TimerTicks (GameTimer) / 1000;
-			SwinGame.DrawText ("Time: " + _time.ToString (), Color.Green,SwinGame.LoadFont (SwinGame.PathToResource ("arial.ttf", ResourceKind.FontResource),30), SwinGame.PointAt (840, 90));
+			SwinGame.DrawText ("Time: " + _time.ToString (), Color.Green,SwinGame.LoadFont (SwinGame.PathToResource ("fff.ttf", ResourceKind.FontResource), 20), SwinGame.PointAt (840, 90));
 		}
 	}
 }
