@@ -192,20 +192,6 @@ namespace MyGame
 			}
 		}
 
-
-		public void drawHighScore (bool b)
-		{
-			while (b == true) {
-				SwinGame.ProcessEvents ();
-				HighScoreController.DrawHighScores ();
-
-				SwinGame.RefreshScreen (60);
-				if ((SwinGame.AnyKeyPressed() || SwinGame.MouseClicked(MouseButton.LeftButton) || SwinGame.MouseClicked(MouseButton.RightButton))) {
-					break;
-				}
-			}
-		}
-
 		public void drawStartInstruction (string draw)
 		{
 			while (draw == "ok") {

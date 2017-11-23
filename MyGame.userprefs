@@ -10,7 +10,7 @@
       <File FileName="src\GameMain.cs" Line="1" Column="1" />
       <File FileName="Class\MapClass.cs" Line="1" Column="1" />
       <File FileName="Class\PlayerMovement.cs" Line="8" Column="4" />
-      <File FileName="Class\Player.cs" Line="26" Column="27" />
+      <File FileName="Class\Player.cs" Line="1" Column="1" />
       <File FileName="Class\Meteor.cs" Line="70" Column="5" />
       <File FileName="Class\UnitTest.cs" Line="23" Column="31" />
       <File FileName="Class\Boss.cs" Line="1" Column="1" />

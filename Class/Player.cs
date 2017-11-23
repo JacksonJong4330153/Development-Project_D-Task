@@ -10,7 +10,6 @@ namespace MyGame
 
 		private Movement _facedirection;
 		private PlayerMovement _pmove;
-		private ProjectileObjectMovement _bullet;
 
 		public Player ()
 		{
@@ -18,15 +17,8 @@ namespace MyGame
 			_health = 5;
 			_score = 0;
 
-			_bullet = new ProjectileObjectMovement ();
 			_facedirection = Movement.Top;
 		}
-
-		public ProjectileObjectMovement _getBullet {
-			get { return _bullet; }
-			set { _bullet = value; }
-		}
-
 
 		public int getScore {
 			get { return _score; }
@@ -71,12 +63,5 @@ namespace MyGame
 		{
 			_facedirection = move;
 		}
-
-
-		public void fire ()
-		{
-			_getBullet.Moving (getFaceDirection);
-		}
-
 	}
 }
