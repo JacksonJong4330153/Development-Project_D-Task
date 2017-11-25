@@ -129,7 +129,10 @@ namespace MyGame
 
 				//Do function when clicked
 				if (SwinGame.MouseClicked (MouseButton.LeftButton) && SwinGame.PointInRect (SwinGame.MousePosition (), 141, 150, 500, 100)) {
-					drawStartInstruction ("ok");
+					if (dtext == "mainmenu") {
+
+						drawStartInstruction ("ok");
+					}
 					break;
 				}
 				if (SwinGame.MouseClicked (MouseButton.LeftButton) && SwinGame.PointInRect (SwinGame.MousePosition (), 141, 250, 500, 100)) {
