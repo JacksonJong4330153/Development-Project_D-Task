@@ -186,7 +186,7 @@ namespace MyGame
 		{
 			while (b == true) {
 				SwinGame.ProcessEvents ();
-				SwinGame.DrawBitmap ("instruction.png", 0, 0);
+				SwinGame.DrawBitmap ("instruction.jpg", 0, 0);
 
 				SwinGame.RefreshScreen (60);
 				if ((SwinGame.AnyKeyPressed() || SwinGame.MouseClicked(MouseButton.LeftButton) || SwinGame.MouseClicked(MouseButton.RightButton))) {
@@ -199,7 +199,7 @@ namespace MyGame
 		{
 			while (draw == "ok") {
 				SwinGame.ProcessEvents ();
-				SwinGame.DrawBitmap ("instruction.png", 0, 0);
+				SwinGame.DrawBitmap ("instruction.jpg", 0, 0);
 
 				SwinGame.RefreshScreen (60);
 				if ((SwinGame.AnyKeyPressed() || SwinGame.MouseClicked(MouseButton.LeftButton) || SwinGame.MouseClicked(MouseButton.RightButton))) {
